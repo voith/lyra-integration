@@ -1,0 +1,5034 @@
+{
+  "_format": "hh-sol-cache-2",
+  "files": {
+    "/Users/voith/Projects/lyra-integration/contracts/Lock.sol": {
+      "lastModificationDate": 1691666808496,
+      "contentHash": "ae66265769cc28ebdaa34881df95bc5e",
+      "sourceName": "contracts/Lock.sol",
+      "solcConfig": {
+        "version": "0.8.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.9"
+      ],
+      "artifacts": [
+        "Lock"
+      ]
+    },
+    "/Users/voith/Projects/lyra-integration/contracts/hardhat-dependency-compiler/@lyrafinance/protocol/contracts/LiquidityPool.sol": {
+      "lastModificationDate": 1691682437513,
+      "contentHash": "b53178d11db7ce2af8ed6a9b29b6603e",
+      "sourceName": "contracts/hardhat-dependency-compiler/@lyrafinance/protocol/contracts/LiquidityPool.sol",
+      "solcConfig": {
+        "version": "0.8.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@lyrafinance/protocol/contracts/LiquidityPool.sol"
+      ],
+      "versionPragmas": [
+        ">0.0.0"
+      ],
+      "artifacts": []
+    },
+    "/Users/voith/Projects/lyra-integration/node_modules/@lyrafinance/protocol/contracts/LiquidityPool.sol": {
+      "lastModificationDate": 1691666199921,
+      "contentHash": "1763d4b86619451be10f4b009225dd08",
+      "sourceName": "@lyrafinance/protocol/contracts/LiquidityPool.sol",
+      "solcConfig": {
+        "version": "0.8.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./synthetix/DecimalMath.sol",
+        "./libraries/ConvertDecimals.sol",
+        "openzeppelin-contracts-4.4.1/utils/math/SafeCast.sol",
+        "./synthetix/Owned.sol",
+        "./libraries/SimpleInitializable.sol",
+        "openzeppelin-contracts-4.4.1/security/ReentrancyGuard.sol",
+        "./interfaces/IERC20Decimals.sol",
+        "./LiquidityToken.sol",
+        "./OptionGreekCache.sol",
+        "./OptionMarket.sol",
+        "./ShortCollateral.sol",
+        "./libraries/PoolHedger.sol",
+        "./BaseExchangeAdapter.sol"
+      ],
+      "versionPragmas": [
+        "0.8.16"
+      ],
+      "artifacts": [
+        "LiquidityPool"
+      ]
+    },
+    "/Users/voith/Projects/lyra-integration/node_modules/@lyrafinance/protocol/contracts/synthetix/DecimalMath.sol": {
+      "lastModificationDate": 1691666200081,
+      "contentHash": "3ec36fbc8d3ae6fa0efed1df14083f27",
+      "sourceName": "@lyrafinance/protocol/contracts/synthetix/DecimalMath.sol",
+      "solcConfig": {
+        "version": "0.8.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.8.16"
+      ],
+      "artifacts": [
+        "DecimalMath"
+      ]
+    },
+    "/Users/voith/Projects/lyra-integration/node_modules/@lyrafinance/protocol/contracts/synthetix/Owned.sol": {
+      "lastModificationDate": 1691666200081,
+      "contentHash": "0dd6a89b85d83225cfc42d3e0905bb79",
+      "sourceName": "@lyrafinance/protocol/contracts/synthetix/Owned.sol",
+      "solcConfig": {
+        "version": "0.8.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./AbstractOwned.sol"
+      ],
+      "versionPragmas": [
+        "0.8.16"
+      ],
+      "artifacts": [
+        "Owned"
+      ]
+    },
+    "/Users/voith/Projects/lyra-integration/node_modules/@lyrafinance/protocol/contracts/libraries/SimpleInitializable.sol": {
+      "lastModificationDate": 1691666200082,
+      "contentHash": "730bf2d62fa9e27fb29a1facdc77b07b",
+      "sourceName": "@lyrafinance/protocol/contracts/libraries/SimpleInitializable.sol",
+      "solcConfig": {
+        "version": "0.8.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.8.16"
+      ],
+      "artifacts": [
+        "SimpleInitializable"
+      ]
+    },
+    "/Users/voith/Projects/lyra-integration/node_modules/openzeppelin-contracts-4.4.1/security/ReentrancyGuard.sol": {
+      "lastModificationDate": 1691666200050,
+      "contentHash": "92f9448b23a90ea3bb932ee55cc3ccce",
+      "sourceName": "openzeppelin-contracts-4.4.1/security/ReentrancyGuard.sol",
+      "solcConfig": {
+        "version": "0.8.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ReentrancyGuard"
+      ]
+    },
+    "/Users/voith/Projects/lyra-integration/node_modules/@lyrafinance/protocol/contracts/LiquidityToken.sol": {
+      "lastModificationDate": 1691666199921,
+      "contentHash": "7a58db0767631a668b0b7948d5cb6dec",
+      "sourceName": "@lyrafinance/protocol/contracts/LiquidityToken.sol",
+      "solcConfig": {
+        "version": "0.8.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./synthetix/DecimalMath.sol",
+        "openzeppelin-contracts-4.4.1/token/ERC20/ERC20.sol",
+        "./synthetix/Owned.sol",
+        "./libraries/SimpleInitializable.sol",
+        "./interfaces/ILiquidityTracker.sol"
+      ],
+      "versionPragmas": [
+        "0.8.16"
+      ],
+      "artifacts": [
+        "LiquidityToken"
+      ]
+    },
+    "/Users/voith/Projects/lyra-integration/node_modules/@lyrafinance/protocol/contracts/OptionGreekCache.sol": {
+      "lastModificationDate": 1691666199921,
+      "contentHash": "62f3dbdfd933fd824ee7408d8935d731",
+      "sourceName": "@lyrafinance/protocol/contracts/OptionGreekCache.sol",
+      "solcConfig": {
+        "version": "0.8.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./synthetix/DecimalMath.sol",
+        "./synthetix/SignedDecimalMath.sol",
+        "./libraries/BlackScholes.sol",
+        "./libraries/ConvertDecimals.sol",
+        "./libraries/Math.sol",
+        "./libraries/GWAV.sol",
+        "./synthetix/Owned.sol",
+        "./libraries/SimpleInitializable.sol",
+        "openzeppelin-contracts-4.4.1/security/ReentrancyGuard.sol",
+        "./BaseExchangeAdapter.sol",
+        "./OptionMarket.sol",
+        "./OptionMarketPricer.sol"
+      ],
+      "versionPragmas": [
+        "0.8.16"
+      ],
+      "artifacts": [
+        "OptionGreekCache"
+      ]
+    },
+    "/Users/voith/Projects/lyra-integration/node_modules/@lyrafinance/protocol/contracts/OptionMarket.sol": {
+      "lastModificationDate": 1691666199921,
+      "contentHash": "92f6ba631e1bf8667356b3fd55fcb61b",
+      "sourceName": "@lyrafinance/protocol/contracts/OptionMarket.sol",
+      "solcConfig": {
+        "version": "0.8.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./synthetix/DecimalMath.sol",
+        "./libraries/ConvertDecimals.sol",
+        "openzeppelin-contracts-4.4.1/utils/math/SafeCast.sol",
+        "./synthetix/Owned.sol",
+        "./libraries/SimpleInitializable.sol",
+        "openzeppelin-contracts-4.4.1/security/ReentrancyGuard.sol",
+        "./interfaces/IERC20Decimals.sol",
+        "./BaseExchangeAdapter.sol",
+        "./LiquidityPool.sol",
+        "./OptionToken.sol",
+        "./OptionGreekCache.sol",
+        "./ShortCollateral.sol",
+        "./OptionMarketPricer.sol"
+      ],
+      "versionPragmas": [
+        "0.8.16"
+      ],
+      "artifacts": [
+        "OptionMarket"
+      ]
+    },
+    "/Users/voith/Projects/lyra-integration/node_modules/@lyrafinance/protocol/contracts/ShortCollateral.sol": {
+      "lastModificationDate": 1691666199922,
+      "contentHash": "7a5e8967aebbe05948881fd0b14c7c03",
+      "sourceName": "@lyrafinance/protocol/contracts/ShortCollateral.sol",
+      "solcConfig": {
+        "version": "0.8.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./synthetix/DecimalMath.sol",
+        "./libraries/ConvertDecimals.sol",
+        "./synthetix/Owned.sol",
+        "./libraries/SimpleInitializable.sol",
+        "openzeppelin-contracts-4.4.1/security/ReentrancyGuard.sol",
+        "./interfaces/IERC20Decimals.sol",
+        "./libraries/PoolHedger.sol",
+        "./BaseExchangeAdapter.sol",
+        "./LiquidityPool.sol",
+        "./OptionMarket.sol",
+        "./OptionToken.sol"
+      ],
+      "versionPragmas": [
+        "0.8.16"
+      ],
+      "artifacts": [
+        "ShortCollateral"
+      ]
+    },
+    "/Users/voith/Projects/lyra-integration/node_modules/@lyrafinance/protocol/contracts/libraries/PoolHedger.sol": {
+      "lastModificationDate": 1691666200082,
+      "contentHash": "7ce181363ffc896051c578b186ee817b",
+      "sourceName": "@lyrafinance/protocol/contracts/libraries/PoolHedger.sol",
+      "solcConfig": {
+        "version": "0.8.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../LiquidityPool.sol"
+      ],
+      "versionPragmas": [
+        "0.8.16"
+      ],
+      "artifacts": [
+        "PoolHedger"
+      ]
+    },
+    "/Users/voith/Projects/lyra-integration/node_modules/openzeppelin-contracts-4.4.1/utils/math/SafeCast.sol": {
+      "lastModificationDate": 1691666200184,
+      "contentHash": "cd91252bfcbee6eaba8f5144f504583c",
+      "sourceName": "openzeppelin-contracts-4.4.1/utils/math/SafeCast.sol",
+      "solcConfig": {
+        "version": "0.8.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "SafeCast"
+      ]
+    },
+    "/Users/voith/Projects/lyra-integration/node_modules/@lyrafinance/protocol/contracts/BaseExchangeAdapter.sol": {
+      "lastModificationDate": 1691666199921,
+      "contentHash": "5413d36c2746bd013068ef71aa771c1d",
+      "sourceName": "@lyrafinance/protocol/contracts/BaseExchangeAdapter.sol",
+      "solcConfig": {
+        "version": "0.8.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./synthetix/DecimalMath.sol",
+        "./libraries/ConvertDecimals.sol",
+        "./synthetix/OwnedUpgradeable.sol",
+        "./interfaces/IERC20Decimals.sol"
+      ],
+      "versionPragmas": [
+        "0.8.16"
+      ],
+      "artifacts": [
+        "BaseExchangeAdapter"
+      ]
+    },
+    "/Users/voith/Projects/lyra-integration/node_modules/@lyrafinance/protocol/contracts/libraries/ConvertDecimals.sol": {
+      "lastModificationDate": 1691666200082,
+      "contentHash": "f90039e4fff43c725487ff6cb317e589",
+      "sourceName": "@lyrafinance/protocol/contracts/libraries/ConvertDecimals.sol",
+      "solcConfig": {
+        "version": "0.8.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./Math.sol"
+      ],
+      "versionPragmas": [
+        "0.8.16"
+      ],
+      "artifacts": [
+        "ConvertDecimals"
+      ]
+    },
+    "/Users/voith/Projects/lyra-integration/node_modules/@lyrafinance/protocol/contracts/interfaces/IERC20Decimals.sol": {
+      "lastModificationDate": 1691666200081,
+      "contentHash": "80068ae03ff03e629010aac0500089b8",
+      "sourceName": "@lyrafinance/protocol/contracts/interfaces/IERC20Decimals.sol",
+      "solcConfig": {
+        "version": "0.8.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "openzeppelin-contracts-4.4.1/token/ERC20/IERC20.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC20Decimals"
+      ]
+    },
+    "/Users/voith/Projects/lyra-integration/node_modules/@lyrafinance/protocol/contracts/synthetix/AbstractOwned.sol": {
+      "lastModificationDate": 1691666200081,
+      "contentHash": "f8ddeabb658430559d5064f9df807e18",
+      "sourceName": "@lyrafinance/protocol/contracts/synthetix/AbstractOwned.sol",
+      "solcConfig": {
+        "version": "0.8.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.8.16"
+      ],
+      "artifacts": [
+        "AbstractOwned"
+      ]
+    },
+    "/Users/voith/Projects/lyra-integration/node_modules/openzeppelin-contracts-4.4.1/token/ERC20/ERC20.sol": {
+      "lastModificationDate": 1691666200184,
+      "contentHash": "f48de0eaae9544072b8766e2eac528a7",
+      "sourceName": "openzeppelin-contracts-4.4.1/token/ERC20/ERC20.sol",
+      "solcConfig": {
+        "version": "0.8.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IERC20.sol",
+        "./extensions/IERC20Metadata.sol",
+        "../../utils/Context.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC20"
+      ]
+    },
+    "/Users/voith/Projects/lyra-integration/node_modules/@lyrafinance/protocol/contracts/interfaces/ILiquidityTracker.sol": {
+      "lastModificationDate": 1691666200081,
+      "contentHash": "b103d19c91ec8cfde82c3c80e7877c1a",
+      "sourceName": "@lyrafinance/protocol/contracts/interfaces/ILiquidityTracker.sol",
+      "solcConfig": {
+        "version": "0.8.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.8.16"
+      ],
+      "artifacts": [
+        "ILiquidityTracker"
+      ]
+    },
+    "/Users/voith/Projects/lyra-integration/node_modules/openzeppelin-contracts-4.4.1/utils/Context.sol": {
+      "lastModificationDate": 1691666200050,
+      "contentHash": "5f2c5c4b6af2dd4551027144797bc8be",
+      "sourceName": "openzeppelin-contracts-4.4.1/utils/Context.sol",
+      "solcConfig": {
+        "version": "0.8.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Context"
+      ]
+    },
+    "/Users/voith/Projects/lyra-integration/node_modules/openzeppelin-contracts-4.4.1/token/ERC20/IERC20.sol": {
+      "lastModificationDate": 1691666200184,
+      "contentHash": "302d9755e46bc69d7058b0cbe7185e37",
+      "sourceName": "openzeppelin-contracts-4.4.1/token/ERC20/IERC20.sol",
+      "solcConfig": {
+        "version": "0.8.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC20"
+      ]
+    },
+    "/Users/voith/Projects/lyra-integration/node_modules/openzeppelin-contracts-4.4.1/token/ERC20/extensions/IERC20Metadata.sol": {
+      "lastModificationDate": 1691666200243,
+      "contentHash": "909ab67fc5c25033fe6cd364f8c056f9",
+      "sourceName": "openzeppelin-contracts-4.4.1/token/ERC20/extensions/IERC20Metadata.sol",
+      "solcConfig": {
+        "version": "0.8.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../IERC20.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC20Metadata"
+      ]
+    },
+    "/Users/voith/Projects/lyra-integration/node_modules/@lyrafinance/protocol/contracts/synthetix/SignedDecimalMath.sol": {
+      "lastModificationDate": 1691666200081,
+      "contentHash": "077a0698daf34508b0374cc0926d1218",
+      "sourceName": "@lyrafinance/protocol/contracts/synthetix/SignedDecimalMath.sol",
+      "solcConfig": {
+        "version": "0.8.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.8.16"
+      ],
+      "artifacts": [
+        "SignedDecimalMath"
+      ]
+    },
+    "/Users/voith/Projects/lyra-integration/node_modules/@lyrafinance/protocol/contracts/libraries/BlackScholes.sol": {
+      "lastModificationDate": 1691666200082,
+      "contentHash": "ac0105b54d65402fa894f0c832e1d48e",
+      "sourceName": "@lyrafinance/protocol/contracts/libraries/BlackScholes.sol",
+      "solcConfig": {
+        "version": "0.8.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../synthetix/SignedDecimalMath.sol",
+        "../synthetix/DecimalMath.sol",
+        "./FixedPointMathLib.sol",
+        "./Math.sol"
+      ],
+      "versionPragmas": [
+        "0.8.16"
+      ],
+      "artifacts": [
+        "BlackScholes"
+      ]
+    },
+    "/Users/voith/Projects/lyra-integration/node_modules/@lyrafinance/protocol/contracts/libraries/GWAV.sol": {
+      "lastModificationDate": 1691666200082,
+      "contentHash": "ef8a4c050f5c823c08ac5c4a49c81713",
+      "sourceName": "@lyrafinance/protocol/contracts/libraries/GWAV.sol",
+      "solcConfig": {
+        "version": "0.8.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../synthetix/SignedDecimalMath.sol",
+        "../synthetix/DecimalMath.sol",
+        "./FixedPointMathLib.sol"
+      ],
+      "versionPragmas": [
+        "0.8.16"
+      ],
+      "artifacts": [
+        "GWAV"
+      ]
+    },
+    "/Users/voith/Projects/lyra-integration/node_modules/@lyrafinance/protocol/contracts/OptionMarketPricer.sol": {
+      "lastModificationDate": 1691666199922,
+      "contentHash": "d7b2b52d0bc9f6782edbd746607e4f5c",
+      "sourceName": "@lyrafinance/protocol/contracts/OptionMarketPricer.sol",
+      "solcConfig": {
+        "version": "0.8.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./synthetix/SignedDecimalMath.sol",
+        "./synthetix/DecimalMath.sol",
+        "openzeppelin-contracts-4.4.1/utils/math/SafeCast.sol",
+        "./synthetix/Owned.sol",
+        "./libraries/SimpleInitializable.sol",
+        "./libraries/Math.sol",
+        "./LiquidityPool.sol",
+        "./OptionMarket.sol",
+        "./OptionGreekCache.sol"
+      ],
+      "versionPragmas": [
+        "0.8.16"
+      ],
+      "artifacts": [
+        "OptionMarketPricer"
+      ]
+    },
+    "/Users/voith/Projects/lyra-integration/node_modules/@lyrafinance/protocol/contracts/libraries/Math.sol": {
+      "lastModificationDate": 1691666200082,
+      "contentHash": "721254623b26f6017830f4993fa1de91",
+      "sourceName": "@lyrafinance/protocol/contracts/libraries/Math.sol",
+      "solcConfig": {
+        "version": "0.8.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.8.16"
+      ],
+      "artifacts": [
+        "Math"
+      ]
+    },
+    "/Users/voith/Projects/lyra-integration/node_modules/@lyrafinance/protocol/contracts/libraries/FixedPointMathLib.sol": {
+      "lastModificationDate": 1691666200082,
+      "contentHash": "62ba4c575df6a02a1cdf010ec3048300",
+      "sourceName": "@lyrafinance/protocol/contracts/libraries/FixedPointMathLib.sol",
+      "solcConfig": {
+        "version": "0.8.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.8.16"
+      ],
+      "artifacts": [
+        "FixedPointMathLib"
+      ]
+    },
+    "/Users/voith/Projects/lyra-integration/node_modules/@lyrafinance/protocol/contracts/OptionToken.sol": {
+      "lastModificationDate": 1691666199922,
+      "contentHash": "b55edd3307fdf692cfd49aeb92e17222",
+      "sourceName": "@lyrafinance/protocol/contracts/OptionToken.sol",
+      "solcConfig": {
+        "version": "0.8.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./synthetix/DecimalMath.sol",
+        "./libraries/ConvertDecimals.sol",
+        "openzeppelin-contracts-4.4.1/utils/math/SafeCast.sol",
+        "openzeppelin-contracts-4.4.1/token/ERC721/extensions/ERC721Enumerable.sol",
+        "./synthetix/Owned.sol",
+        "./libraries/SimpleInitializable.sol",
+        "openzeppelin-contracts-4.4.1/security/ReentrancyGuard.sol",
+        "./OptionMarket.sol",
+        "./BaseExchangeAdapter.sol",
+        "./OptionGreekCache.sol"
+      ],
+      "versionPragmas": [
+        "0.8.16"
+      ],
+      "artifacts": [
+        "OptionToken"
+      ]
+    },
+    "/Users/voith/Projects/lyra-integration/node_modules/openzeppelin-contracts-4.4.1/token/ERC721/extensions/ERC721Enumerable.sol": {
+      "lastModificationDate": 1691666200243,
+      "contentHash": "88095889e59d16821879a8083f906503",
+      "sourceName": "openzeppelin-contracts-4.4.1/token/ERC721/extensions/ERC721Enumerable.sol",
+      "solcConfig": {
+        "version": "0.8.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../ERC721.sol",
+        "./IERC721Enumerable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC721Enumerable"
+      ]
+    },
+    "/Users/voith/Projects/lyra-integration/node_modules/openzeppelin-contracts-4.4.1/token/ERC721/ERC721.sol": {
+      "lastModificationDate": 1691666200184,
+      "contentHash": "ead7082e39cf31875ff89b22f473500d",
+      "sourceName": "openzeppelin-contracts-4.4.1/token/ERC721/ERC721.sol",
+      "solcConfig": {
+        "version": "0.8.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IERC721.sol",
+        "./IERC721Receiver.sol",
+        "./extensions/IERC721Metadata.sol",
+        "../../utils/Address.sol",
+        "../../utils/Context.sol",
+        "../../utils/Strings.sol",
+        "../../utils/introspection/ERC165.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC721"
+      ]
+    },
+    "/Users/voith/Projects/lyra-integration/node_modules/openzeppelin-contracts-4.4.1/token/ERC721/extensions/IERC721Enumerable.sol": {
+      "lastModificationDate": 1691666200243,
+      "contentHash": "f69eb47f667b846a8698697d25eeff4e",
+      "sourceName": "openzeppelin-contracts-4.4.1/token/ERC721/extensions/IERC721Enumerable.sol",
+      "solcConfig": {
+        "version": "0.8.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../IERC721.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC721Enumerable"
+      ]
+    },
+    "/Users/voith/Projects/lyra-integration/node_modules/openzeppelin-contracts-4.4.1/token/ERC721/IERC721.sol": {
+      "lastModificationDate": 1691666200184,
+      "contentHash": "27d219ec6f69478d065fdbfa7931da68",
+      "sourceName": "openzeppelin-contracts-4.4.1/token/ERC721/IERC721.sol",
+      "solcConfig": {
+        "version": "0.8.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../../utils/introspection/IERC165.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC721"
+      ]
+    },
+    "/Users/voith/Projects/lyra-integration/node_modules/openzeppelin-contracts-4.4.1/utils/Address.sol": {
+      "lastModificationDate": 1691666200050,
+      "contentHash": "4cff8b2ea0d958750786b4e3ca308445",
+      "sourceName": "openzeppelin-contracts-4.4.1/utils/Address.sol",
+      "solcConfig": {
+        "version": "0.8.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Address"
+      ]
+    },
+    "/Users/voith/Projects/lyra-integration/node_modules/openzeppelin-contracts-4.4.1/utils/Strings.sol": {
+      "lastModificationDate": 1691666200050,
+      "contentHash": "9c54c6c065d9e590fdcdd72c451425b9",
+      "sourceName": "openzeppelin-contracts-4.4.1/utils/Strings.sol",
+      "solcConfig": {
+        "version": "0.8.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Strings"
+      ]
+    },
+    "/Users/voith/Projects/lyra-integration/node_modules/openzeppelin-contracts-4.4.1/utils/introspection/ERC165.sol": {
+      "lastModificationDate": 1691666200184,
+      "contentHash": "0e7db055ce108f9da7bb6686a00287c0",
+      "sourceName": "openzeppelin-contracts-4.4.1/utils/introspection/ERC165.sol",
+      "solcConfig": {
+        "version": "0.8.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IERC165.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC165"
+      ]
+    },
+    "/Users/voith/Projects/lyra-integration/node_modules/openzeppelin-contracts-4.4.1/token/ERC721/IERC721Receiver.sol": {
+      "lastModificationDate": 1691666200184,
+      "contentHash": "592df588492d45fdcf46b3cb608c0fbf",
+      "sourceName": "openzeppelin-contracts-4.4.1/token/ERC721/IERC721Receiver.sol",
+      "solcConfig": {
+        "version": "0.8.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC721Receiver"
+      ]
+    },
+    "/Users/voith/Projects/lyra-integration/node_modules/openzeppelin-contracts-4.4.1/token/ERC721/extensions/IERC721Metadata.sol": {
+      "lastModificationDate": 1691666200243,
+      "contentHash": "efbc0d15b80a74e34dbe8da0f3e879bb",
+      "sourceName": "openzeppelin-contracts-4.4.1/token/ERC721/extensions/IERC721Metadata.sol",
+      "solcConfig": {
+        "version": "0.8.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../IERC721.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC721Metadata"
+      ]
+    },
+    "/Users/voith/Projects/lyra-integration/node_modules/openzeppelin-contracts-4.4.1/utils/introspection/IERC165.sol": {
+      "lastModificationDate": 1691666200184,
+      "contentHash": "03e6768535ac4da0e9756f1d8a4a018a",
+      "sourceName": "openzeppelin-contracts-4.4.1/utils/introspection/IERC165.sol",
+      "solcConfig": {
+        "version": "0.8.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC165"
+      ]
+    },
+    "/Users/voith/Projects/lyra-integration/node_modules/@lyrafinance/protocol/contracts/synthetix/OwnedUpgradeable.sol": {
+      "lastModificationDate": 1691666200081,
+      "contentHash": "8664320c712cbf5de8966653deea6bd6",
+      "sourceName": "@lyrafinance/protocol/contracts/synthetix/OwnedUpgradeable.sol",
+      "solcConfig": {
+        "version": "0.8.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "openzeppelin-contracts-upgradeable-4.5.1/proxy/utils/Initializable.sol",
+        "./AbstractOwned.sol"
+      ],
+      "versionPragmas": [
+        "0.8.16"
+      ],
+      "artifacts": [
+        "OwnedUpgradeable"
+      ]
+    },
+    "/Users/voith/Projects/lyra-integration/node_modules/openzeppelin-contracts-upgradeable-4.5.1/proxy/utils/Initializable.sol": {
+      "lastModificationDate": 1691666200170,
+      "contentHash": "49c8ad51a559f6dda13d35874f7dfdb9",
+      "sourceName": "openzeppelin-contracts-upgradeable-4.5.1/proxy/utils/Initializable.sol",
+      "solcConfig": {
+        "version": "0.8.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../../utils/AddressUpgradeable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Initializable"
+      ]
+    },
+    "/Users/voith/Projects/lyra-integration/node_modules/openzeppelin-contracts-upgradeable-4.5.1/utils/AddressUpgradeable.sol": {
+      "lastModificationDate": 1691666200050,
+      "contentHash": "b70d2e0552ab1f44f7e44b5f8379c358",
+      "sourceName": "openzeppelin-contracts-upgradeable-4.5.1/utils/AddressUpgradeable.sol",
+      "solcConfig": {
+        "version": "0.8.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.1"
+      ],
+      "artifacts": [
+        "AddressUpgradeable"
+      ]
+    },
+    "/Users/voith/Projects/lyra-integration/node_modules/@lyrafinance/protocol/contracts/test-helpers/ITestERC20.sol": {
+      "lastModificationDate": 1691666200109,
+      "contentHash": "77b49d0323922dddfe5e1db6896549f2",
+      "sourceName": "@lyrafinance/protocol/contracts/test-helpers/ITestERC20.sol",
+      "solcConfig": {
+        "version": "0.8.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "openzeppelin-contracts-4.4.1/token/ERC20/IERC20.sol"
+      ],
+      "versionPragmas": [
+        "0.8.16"
+      ],
+      "artifacts": [
+        "ITestERC20"
+      ]
+    },
+    "/Users/voith/Projects/lyra-integration/node_modules/@lyrafinance/protocol/contracts/test-helpers/TestERC20SetDecimals.sol": {
+      "lastModificationDate": 1691666200109,
+      "contentHash": "9f88e298e3c6236ebec486933a389278",
+      "sourceName": "@lyrafinance/protocol/contracts/test-helpers/TestERC20SetDecimals.sol",
+      "solcConfig": {
+        "version": "0.8.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "openzeppelin-contracts-4.4.1/token/ERC20/ERC20.sol",
+        "./ITestERC20.sol"
+      ],
+      "versionPragmas": [
+        "0.8.16"
+      ],
+      "artifacts": [
+        "TestERC20SetDecimals"
+      ]
+    },
+    "/Users/voith/Projects/lyra-integration/node_modules/@lyrafinance/protocol/contracts/test-helpers/TestERC20.sol": {
+      "lastModificationDate": 1691666200109,
+      "contentHash": "e2847ebe1054e1460d912259c693ba76",
+      "sourceName": "@lyrafinance/protocol/contracts/test-helpers/TestERC20.sol",
+      "solcConfig": {
+        "version": "0.8.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "openzeppelin-contracts-4.4.1/token/ERC20/ERC20.sol",
+        "./ITestERC20.sol"
+      ],
+      "versionPragmas": [
+        "0.8.16"
+      ],
+      "artifacts": [
+        "TestERC20"
+      ]
+    },
+    "/Users/voith/Projects/lyra-integration/node_modules/@lyrafinance/protocol/contracts/test-helpers/TestERC20Fail.sol": {
+      "lastModificationDate": 1691666200109,
+      "contentHash": "dde8357bb6adcbc223bd0b69e26b9b66",
+      "sourceName": "@lyrafinance/protocol/contracts/test-helpers/TestERC20Fail.sol",
+      "solcConfig": {
+        "version": "0.8.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./TestERC20.sol"
+      ],
+      "versionPragmas": [
+        "0.8.16"
+      ],
+      "artifacts": [
+        "TestERC20Fail"
+      ]
+    },
+    "/Users/voith/Projects/lyra-integration/contracts/hardhat-dependency-compiler/@lyrafinance/protocol/contracts/test-helpers/TestERC20Fail.sol": {
+      "lastModificationDate": 1691682437515,
+      "contentHash": "414774d2f7899f88559c490a7f6f41f2",
+      "sourceName": "contracts/hardhat-dependency-compiler/@lyrafinance/protocol/contracts/test-helpers/TestERC20Fail.sol",
+      "solcConfig": {
+        "version": "0.8.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@lyrafinance/protocol/contracts/test-helpers/TestERC20Fail.sol"
+      ],
+      "versionPragmas": [
+        ">0.0.0"
+      ],
+      "artifacts": []
+    },
+    "/Users/voith/Projects/lyra-integration/node_modules/@lyrafinance/protocol/contracts/test-helpers/TestFaucet.sol": {
+      "lastModificationDate": 1691666200109,
+      "contentHash": "964cf5b79269409fd364bb7563c2e011",
+      "sourceName": "@lyrafinance/protocol/contracts/test-helpers/TestFaucet.sol",
+      "solcConfig": {
+        "version": "0.8.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./TestERC20.sol"
+      ],
+      "versionPragmas": [
+        "0.8.16"
+      ],
+      "artifacts": [
+        "TestFaucet"
+      ]
+    },
+    "/Users/voith/Projects/lyra-integration/contracts/hardhat-dependency-compiler/@lyrafinance/protocol/contracts/test-helpers/TestFaucet.sol": {
+      "lastModificationDate": 1691682437515,
+      "contentHash": "1c161575eeb3caf22d142ce412d7160f",
+      "sourceName": "contracts/hardhat-dependency-compiler/@lyrafinance/protocol/contracts/test-helpers/TestFaucet.sol",
+      "solcConfig": {
+        "version": "0.8.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@lyrafinance/protocol/contracts/test-helpers/TestFaucet.sol"
+      ],
+      "versionPragmas": [
+        ">0.0.0"
+      ],
+      "artifacts": []
+    },
+    "/Users/voith/Projects/lyra-integration/node_modules/@lyrafinance/protocol/contracts/test-helpers/TestCurve.sol": {
+      "lastModificationDate": 1691666200109,
+      "contentHash": "2fbde4d8bb1f418e4a7e4871f7eb5af9",
+      "sourceName": "@lyrafinance/protocol/contracts/test-helpers/TestCurve.sol",
+      "solcConfig": {
+        "version": "0.8.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../synthetix/DecimalMath.sol",
+        "../interfaces/ICurve.sol",
+        "./TestERC20.sol",
+        "../synthetix/Owned.sol"
+      ],
+      "versionPragmas": [
+        "0.8.16"
+      ],
+      "artifacts": [
+        "TestCurve"
+      ]
+    },
+    "/Users/voith/Projects/lyra-integration/node_modules/@lyrafinance/protocol/contracts/interfaces/ICurve.sol": {
+      "lastModificationDate": 1691666200081,
+      "contentHash": "03cf9816d2587c2466b24246ef9b2ee8",
+      "sourceName": "@lyrafinance/protocol/contracts/interfaces/ICurve.sol",
+      "solcConfig": {
+        "version": "0.8.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.8.16"
+      ],
+      "artifacts": [
+        "ICurve"
+      ]
+    },
+    "/Users/voith/Projects/lyra-integration/node_modules/@lyrafinance/protocol/contracts/periphery/Wrapper/BasicOptionMarketWrapper.sol": {
+      "lastModificationDate": 1691666200204,
+      "contentHash": "942f3dc75c0a7f252006ff594953735d",
+      "sourceName": "@lyrafinance/protocol/contracts/periphery/Wrapper/BasicOptionMarketWrapper.sol",
+      "solcConfig": {
+        "version": "0.8.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../../synthetix/Owned.sol",
+        "../../OptionMarket.sol"
+      ],
+      "versionPragmas": [
+        "0.8.16"
+      ],
+      "artifacts": [
+        "BasicOptionMarketWrapper"
+      ]
+    },
+    "/Users/voith/Projects/lyra-integration/node_modules/@lyrafinance/protocol/contracts/periphery/Wrapper/OptionMarketWrapperWithSwaps.sol": {
+      "lastModificationDate": 1691666200204,
+      "contentHash": "1aa284682c51e9cb8ed85d801ff19b9b",
+      "sourceName": "@lyrafinance/protocol/contracts/periphery/Wrapper/OptionMarketWrapperWithSwaps.sol",
+      "solcConfig": {
+        "version": "0.8.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../../synthetix/DecimalMath.sol",
+        "../../synthetix/Owned.sol",
+        "../../OptionMarket.sol",
+        "../../OptionToken.sol",
+        "../../LiquidityPool.sol",
+        "../../LiquidityToken.sol",
+        "../../interfaces/ICurve.sol",
+        "../../interfaces/IFeeCounter.sol",
+        "../../interfaces/IERC20Decimals.sol",
+        "../../interfaces/IWETH.sol"
+      ],
+      "versionPragmas": [
+        "0.8.16"
+      ],
+      "artifacts": [
+        "OptionMarketWrapperWithSwaps"
+      ]
+    },
+    "/Users/voith/Projects/lyra-integration/node_modules/@lyrafinance/protocol/contracts/interfaces/IFeeCounter.sol": {
+      "lastModificationDate": 1691666200081,
+      "contentHash": "04e9cccbfad927c9e5a1e67b2e620bc2",
+      "sourceName": "@lyrafinance/protocol/contracts/interfaces/IFeeCounter.sol",
+      "solcConfig": {
+        "version": "0.8.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.8.16"
+      ],
+      "artifacts": [
+        "IFeeCounter"
+      ]
+    },
+    "/Users/voith/Projects/lyra-integration/node_modules/@lyrafinance/protocol/contracts/interfaces/IWETH.sol": {
+      "lastModificationDate": 1691666200081,
+      "contentHash": "1e05bc7cb3f774cb1f514c6ab1724255",
+      "sourceName": "@lyrafinance/protocol/contracts/interfaces/IWETH.sol",
+      "solcConfig": {
+        "version": "0.8.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IERC20Decimals.sol"
+      ],
+      "versionPragmas": [
+        "0.8.16"
+      ],
+      "artifacts": [
+        "IWETH"
+      ]
+    },
+    "/Users/voith/Projects/lyra-integration/node_modules/@lyrafinance/protocol/contracts/periphery/BasicFeeCounter.sol": {
+      "lastModificationDate": 1691666200081,
+      "contentHash": "af355162600be0bb9360057ad7de4313",
+      "sourceName": "@lyrafinance/protocol/contracts/periphery/BasicFeeCounter.sol",
+      "solcConfig": {
+        "version": "0.8.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../synthetix/Owned.sol",
+        "../interfaces/IFeeCounter.sol"
+      ],
+      "versionPragmas": [
+        "0.8.16"
+      ],
+      "artifacts": [
+        "BasicFeeCounter"
+      ]
+    },
+    "/Users/voith/Projects/lyra-integration/node_modules/@lyrafinance/protocol/contracts/periphery/LyraAdapter.sol": {
+      "lastModificationDate": 1691666200081,
+      "contentHash": "428079902cc03a87a50230591508b716",
+      "sourceName": "@lyrafinance/protocol/contracts/periphery/LyraAdapter.sol",
+      "solcConfig": {
+        "version": "0.8.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../libraries/GWAV.sol",
+        "../libraries/BlackScholes.sol",
+        "../synthetix/DecimalMath.sol",
+        "openzeppelin-contracts-4.4.1/access/Ownable.sol",
+        "openzeppelin-contracts-4.4.1/token/ERC20/IERC20.sol",
+        "../interfaces/IOptionToken.sol",
+        "../interfaces/IOptionMarket.sol",
+        "../interfaces/ILiquidityPool.sol",
+        "../interfaces/IShortCollateral.sol",
+        "../interfaces/IOptionGreekCache.sol",
+        "../interfaces/ISynthetixAdapter.sol",
+        "../interfaces/IDelegateApprovals.sol",
+        "../interfaces/ICurve.sol",
+        "../interfaces/IGWAVOracle.sol",
+        "../interfaces/ILyraRegistry.sol",
+        "./BasicFeeCounter.sol"
+      ],
+      "versionPragmas": [
+        "0.8.16"
+      ],
+      "artifacts": [
+        "LyraAdapter"
+      ]
+    },
+    "/Users/voith/Projects/lyra-integration/node_modules/@lyrafinance/protocol/contracts/interfaces/IOptionMarket.sol": {
+      "lastModificationDate": 1691666200081,
+      "contentHash": "20142a8baa3eb006a4731bba08bbe773",
+      "sourceName": "@lyrafinance/protocol/contracts/interfaces/IOptionMarket.sol",
+      "solcConfig": {
+        "version": "0.8.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./ILiquidityPool.sol",
+        "./ISynthetixAdapter.sol",
+        "./IOptionMarketPricer.sol"
+      ],
+      "versionPragmas": [
+        "0.8.16"
+      ],
+      "artifacts": [
+        "IOptionMarket"
+      ]
+    },
+    "/Users/voith/Projects/lyra-integration/node_modules/@lyrafinance/protocol/contracts/interfaces/ILiquidityPool.sol": {
+      "lastModificationDate": 1691666200081,
+      "contentHash": "ffd55e7a12cf7fcdab76311167d62849",
+      "sourceName": "@lyrafinance/protocol/contracts/interfaces/ILiquidityPool.sol",
+      "solcConfig": {
+        "version": "0.8.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.8.16"
+      ],
+      "artifacts": [
+        "ILiquidityPool"
+      ]
+    },
+    "/Users/voith/Projects/lyra-integration/node_modules/@lyrafinance/protocol/contracts/interfaces/IShortCollateral.sol": {
+      "lastModificationDate": 1691666200081,
+      "contentHash": "649be9c83f4fc33b69f45b5ab025bfe3",
+      "sourceName": "@lyrafinance/protocol/contracts/interfaces/IShortCollateral.sol",
+      "solcConfig": {
+        "version": "0.8.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IOptionMarket.sol",
+        "./IOptionToken.sol"
+      ],
+      "versionPragmas": [
+        "0.8.16"
+      ],
+      "artifacts": [
+        "IShortCollateral"
+      ]
+    },
+    "/Users/voith/Projects/lyra-integration/node_modules/@lyrafinance/protocol/contracts/interfaces/IOptionGreekCache.sol": {
+      "lastModificationDate": 1691666200081,
+      "contentHash": "dd08601a6e8cc078d70c42de92f59c48",
+      "sourceName": "@lyrafinance/protocol/contracts/interfaces/IOptionGreekCache.sol",
+      "solcConfig": {
+        "version": "0.8.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IOptionMarket.sol"
+      ],
+      "versionPragmas": [
+        "0.8.16"
+      ],
+      "artifacts": [
+        "IOptionGreekCache"
+      ]
+    },
+    "/Users/voith/Projects/lyra-integration/node_modules/@lyrafinance/protocol/contracts/interfaces/ISynthetixAdapter.sol": {
+      "lastModificationDate": 1691666200081,
+      "contentHash": "5fec8a64b0f00cd8492ce01bffe41c2a",
+      "sourceName": "@lyrafinance/protocol/contracts/interfaces/ISynthetixAdapter.sol",
+      "solcConfig": {
+        "version": "0.8.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IAddressResolver.sol",
+        "./ISynthetix.sol",
+        "./IExchanger.sol",
+        "./IExchangeRates.sol",
+        "./IDelegateApprovals.sol"
+      ],
+      "versionPragmas": [
+        "0.8.16"
+      ],
+      "artifacts": [
+        "ISynthetixAdapter"
+      ]
+    },
+    "/Users/voith/Projects/lyra-integration/node_modules/@lyrafinance/protocol/contracts/interfaces/IGWAVOracle.sol": {
+      "lastModificationDate": 1691666200081,
+      "contentHash": "68c987aa9d8b7925078e09b8980e27df",
+      "sourceName": "@lyrafinance/protocol/contracts/interfaces/IGWAVOracle.sol",
+      "solcConfig": {
+        "version": "0.8.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.8.16"
+      ],
+      "artifacts": [
+        "IGWAVOracle"
+      ]
+    },
+    "/Users/voith/Projects/lyra-integration/node_modules/@lyrafinance/protocol/contracts/interfaces/ILyraRegistry.sol": {
+      "lastModificationDate": 1691666200081,
+      "contentHash": "ab64a54e1a5af54ed3620b376cc3b133",
+      "sourceName": "@lyrafinance/protocol/contracts/interfaces/ILyraRegistry.sol",
+      "solcConfig": {
+        "version": "0.8.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "openzeppelin-contracts-4.4.1/token/ERC20/IERC20.sol"
+      ],
+      "versionPragmas": [
+        "0.8.16"
+      ],
+      "artifacts": [
+        "ILyraRegistry"
+      ]
+    },
+    "/Users/voith/Projects/lyra-integration/node_modules/openzeppelin-contracts-4.4.1/access/Ownable.sol": {
+      "lastModificationDate": 1691666200050,
+      "contentHash": "8398972af73b4e9e5ff3b31cad86234f",
+      "sourceName": "openzeppelin-contracts-4.4.1/access/Ownable.sol",
+      "solcConfig": {
+        "version": "0.8.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../utils/Context.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Ownable"
+      ]
+    },
+    "/Users/voith/Projects/lyra-integration/node_modules/@lyrafinance/protocol/contracts/interfaces/IDelegateApprovals.sol": {
+      "lastModificationDate": 1691666200081,
+      "contentHash": "116ae4e5eef137cbee2e7b00de223cee",
+      "sourceName": "@lyrafinance/protocol/contracts/interfaces/IDelegateApprovals.sol",
+      "solcConfig": {
+        "version": "0.8.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.8.16"
+      ],
+      "artifacts": [
+        "IDelegateApprovals"
+      ]
+    },
+    "/Users/voith/Projects/lyra-integration/node_modules/@lyrafinance/protocol/contracts/interfaces/IOptionToken.sol": {
+      "lastModificationDate": 1691666200081,
+      "contentHash": "d94fae26a5a27a4f98ad31c123664f18",
+      "sourceName": "@lyrafinance/protocol/contracts/interfaces/IOptionToken.sol",
+      "solcConfig": {
+        "version": "0.8.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IOptionMarket.sol",
+        "./ISynthetixAdapter.sol",
+        "./IOptionGreekCache.sol",
+        "openzeppelin-contracts-4.4.1/token/ERC721/IERC721.sol"
+      ],
+      "versionPragmas": [
+        "0.8.16"
+      ],
+      "artifacts": [
+        "IOptionToken"
+      ]
+    },
+    "/Users/voith/Projects/lyra-integration/node_modules/@lyrafinance/protocol/contracts/interfaces/IOptionMarketPricer.sol": {
+      "lastModificationDate": 1691666200081,
+      "contentHash": "2e46abf4ce5760a56cfd174ad5b152a3",
+      "sourceName": "@lyrafinance/protocol/contracts/interfaces/IOptionMarketPricer.sol",
+      "solcConfig": {
+        "version": "0.8.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IOptionMarket.sol",
+        "./IOptionGreekCache.sol"
+      ],
+      "versionPragmas": [
+        "0.8.16"
+      ],
+      "artifacts": [
+        "IOptionMarketPricer"
+      ]
+    },
+    "/Users/voith/Projects/lyra-integration/node_modules/@lyrafinance/protocol/contracts/interfaces/ISynthetix.sol": {
+      "lastModificationDate": 1691666200081,
+      "contentHash": "609d97ae5edecc564f4380bfedf8e4d0",
+      "sourceName": "@lyrafinance/protocol/contracts/interfaces/ISynthetix.sol",
+      "solcConfig": {
+        "version": "0.8.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.8.16"
+      ],
+      "artifacts": [
+        "ISynthetix"
+      ]
+    },
+    "/Users/voith/Projects/lyra-integration/node_modules/@lyrafinance/protocol/contracts/interfaces/IAddressResolver.sol": {
+      "lastModificationDate": 1691666200081,
+      "contentHash": "8bcc8956aa2c26db3c2d8a1e88a7d8b7",
+      "sourceName": "@lyrafinance/protocol/contracts/interfaces/IAddressResolver.sol",
+      "solcConfig": {
+        "version": "0.8.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.8.16"
+      ],
+      "artifacts": [
+        "IAddressResolver"
+      ]
+    },
+    "/Users/voith/Projects/lyra-integration/node_modules/@lyrafinance/protocol/contracts/interfaces/IExchanger.sol": {
+      "lastModificationDate": 1691666200081,
+      "contentHash": "d2c634176f8d3911cfac65414655c39a",
+      "sourceName": "@lyrafinance/protocol/contracts/interfaces/IExchanger.sol",
+      "solcConfig": {
+        "version": "0.8.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.8.16"
+      ],
+      "artifacts": [
+        "IExchanger"
+      ]
+    },
+    "/Users/voith/Projects/lyra-integration/node_modules/@lyrafinance/protocol/contracts/interfaces/IExchangeRates.sol": {
+      "lastModificationDate": 1691666200081,
+      "contentHash": "8fcd9bb7920df7e12767661b72533f59",
+      "sourceName": "@lyrafinance/protocol/contracts/interfaces/IExchangeRates.sol",
+      "solcConfig": {
+        "version": "0.8.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.8.16"
+      ],
+      "artifacts": [
+        "IExchangeRates"
+      ]
+    },
+    "/Users/voith/Projects/lyra-integration/contracts/hardhat-dependency-compiler/openzeppelin-contracts-4.4.1/access/Ownable.sol": {
+      "lastModificationDate": 1691682437516,
+      "contentHash": "75827cd783f57a5b321822378f7a1bf1",
+      "sourceName": "contracts/hardhat-dependency-compiler/openzeppelin-contracts-4.4.1/access/Ownable.sol",
+      "solcConfig": {
+        "version": "0.8.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "openzeppelin-contracts-4.4.1/access/Ownable.sol"
+      ],
+      "versionPragmas": [
+        ">0.0.0"
+      ],
+      "artifacts": []
+    },
+    "/Users/voith/Projects/lyra-integration/node_modules/@lyrafinance/protocol/contracts/periphery/OptionMarketViewer.sol": {
+      "lastModificationDate": 1691666200081,
+      "contentHash": "7464527d57bad5fa83baeb5024e40889",
+      "sourceName": "@lyrafinance/protocol/contracts/periphery/OptionMarketViewer.sol",
+      "solcConfig": {
+        "version": "0.8.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../synthetix/Owned.sol",
+        "../OptionMarket.sol",
+        "../OptionToken.sol",
+        "../LiquidityPool.sol",
+        "../OptionGreekCache.sol",
+        "../OptionMarketPricer.sol",
+        "../BaseExchangeAdapter.sol"
+      ],
+      "versionPragmas": [
+        "0.8.16"
+      ],
+      "artifacts": [
+        "OptionMarketViewer"
+      ]
+    },
+    "/Users/voith/Projects/lyra-integration/node_modules/@lyrafinance/protocol/contracts/periphery/GWAVOracle.sol": {
+      "lastModificationDate": 1691666200081,
+      "contentHash": "1320b96caedc2a3cb8d39215b4152a2d",
+      "sourceName": "@lyrafinance/protocol/contracts/periphery/GWAVOracle.sol",
+      "solcConfig": {
+        "version": "0.8.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../libraries/GWAV.sol",
+        "../libraries/BlackScholes.sol",
+        "../synthetix/DecimalMath.sol",
+        "../synthetix/Owned.sol",
+        "../OptionMarket.sol",
+        "../OptionGreekCache.sol",
+        "../BaseExchangeAdapter.sol"
+      ],
+      "versionPragmas": [
+        "0.8.16"
+      ],
+      "artifacts": [
+        "GWAVOracle"
+      ]
+    },
+    "/Users/voith/Projects/lyra-integration/node_modules/@lyrafinance/protocol/contracts/test-helpers/OldBlackScholesMath.sol": {
+      "lastModificationDate": 1691666200109,
+      "contentHash": "0be62242a1d959bbae3974ef78483f58",
+      "sourceName": "@lyrafinance/protocol/contracts/test-helpers/OldBlackScholesMath.sol",
+      "solcConfig": {
+        "version": "0.8.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../synthetix/SignedDecimalMath.sol",
+        "../synthetix/DecimalMath.sol"
+      ],
+      "versionPragmas": [
+        "0.8.16"
+      ],
+      "artifacts": [
+        "OldBlackScholesMath"
+      ]
+    },
+    "/Users/voith/Projects/lyra-integration/node_modules/@lyrafinance/protocol/contracts/periphery/LyraRegistry.sol": {
+      "lastModificationDate": 1691666200081,
+      "contentHash": "558c6d49f5f9da73157048a3f43c3edc",
+      "sourceName": "@lyrafinance/protocol/contracts/periphery/LyraRegistry.sol",
+      "solcConfig": {
+        "version": "0.8.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../libraries/BlackScholes.sol",
+        "../synthetix/DecimalMath.sol",
+        "../synthetix/Owned.sol",
+        "../OptionMarket.sol",
+        "../OptionToken.sol",
+        "../LiquidityPool.sol",
+        "../OptionGreekCache.sol",
+        "../OptionMarketPricer.sol",
+        "./OptionMarketViewer.sol",
+        "./GWAVOracle.sol",
+        "./Wrapper/OptionMarketWrapper.sol"
+      ],
+      "versionPragmas": [
+        "0.8.16"
+      ],
+      "artifacts": [
+        "LyraRegistry"
+      ]
+    },
+    "/Users/voith/Projects/lyra-integration/node_modules/@lyrafinance/protocol/contracts/periphery/Wrapper/OptionMarketWrapper.sol": {
+      "lastModificationDate": 1691666200204,
+      "contentHash": "34f54ff2f15b3a8ccd53e6d41c31ceb9",
+      "sourceName": "@lyrafinance/protocol/contracts/periphery/Wrapper/OptionMarketWrapper.sol",
+      "solcConfig": {
+        "version": "0.8.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./OptionMarketWrapperWithSwaps.sol"
+      ],
+      "versionPragmas": [
+        "0.8.16"
+      ],
+      "artifacts": [
+        "OptionMarketWrapper"
+      ]
+    },
+    "/Users/voith/Projects/lyra-integration/contracts/hardhat-dependency-compiler/@lyrafinance/protocol/contracts/periphery/Wrapper/OptionMarketWrapper.sol": {
+      "lastModificationDate": 1691682437514,
+      "contentHash": "eb0e82ac9eed690081cbd71b029d07f6",
+      "sourceName": "contracts/hardhat-dependency-compiler/@lyrafinance/protocol/contracts/periphery/Wrapper/OptionMarketWrapper.sol",
+      "solcConfig": {
+        "version": "0.8.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@lyrafinance/protocol/contracts/periphery/Wrapper/OptionMarketWrapper.sol"
+      ],
+      "versionPragmas": [
+        ">0.0.0"
+      ],
+      "artifacts": []
+    },
+    "/Users/voith/Projects/lyra-integration/contracts/hardhat-dependency-compiler/@lyrafinance/protocol/contracts/periphery/LyraRegistry.sol": {
+      "lastModificationDate": 1691682437514,
+      "contentHash": "301556f4336523487d4df7d4a44a0471",
+      "sourceName": "contracts/hardhat-dependency-compiler/@lyrafinance/protocol/contracts/periphery/LyraRegistry.sol",
+      "solcConfig": {
+        "version": "0.8.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@lyrafinance/protocol/contracts/periphery/LyraRegistry.sol"
+      ],
+      "versionPragmas": [
+        ">0.0.0"
+      ],
+      "artifacts": []
+    },
+    "/Users/voith/Projects/lyra-integration/node_modules/@lyrafinance/protocol/contracts/test-helpers/MathTest.sol": {
+      "lastModificationDate": 1691666200109,
+      "contentHash": "8d369c0b61935f61fae6a7260f9822c4",
+      "sourceName": "@lyrafinance/protocol/contracts/test-helpers/MathTest.sol",
+      "solcConfig": {
+        "version": "0.8.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../libraries/FixedPointMathLib.sol",
+        "./OldBlackScholesMath.sol"
+      ],
+      "versionPragmas": [
+        "0.8.16"
+      ],
+      "artifacts": [
+        "MathTest"
+      ]
+    },
+    "/Users/voith/Projects/lyra-integration/contracts/hardhat-dependency-compiler/@lyrafinance/protocol/contracts/test-helpers/MathTest.sol": {
+      "lastModificationDate": 1691682437515,
+      "contentHash": "eb1f3f3b83de68fd0cc1d1e08b28a48b",
+      "sourceName": "contracts/hardhat-dependency-compiler/@lyrafinance/protocol/contracts/test-helpers/MathTest.sol",
+      "solcConfig": {
+        "version": "0.8.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@lyrafinance/protocol/contracts/test-helpers/MathTest.sol"
+      ],
+      "versionPragmas": [
+        ">0.0.0"
+      ],
+      "artifacts": []
+    },
+    "/Users/voith/Projects/lyra-integration/contracts/hardhat-dependency-compiler/@lyrafinance/protocol/contracts/libraries/GWAV.sol": {
+      "lastModificationDate": 1691682437512,
+      "contentHash": "cd37ab30629dbacd2d5edeceaf0d9349",
+      "sourceName": "contracts/hardhat-dependency-compiler/@lyrafinance/protocol/contracts/libraries/GWAV.sol",
+      "solcConfig": {
+        "version": "0.8.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@lyrafinance/protocol/contracts/libraries/GWAV.sol"
+      ],
+      "versionPragmas": [
+        ">0.0.0"
+      ],
+      "artifacts": []
+    },
+    "/Users/voith/Projects/lyra-integration/contracts/hardhat-dependency-compiler/@lyrafinance/protocol/contracts/libraries/FixedPointMathLib.sol": {
+      "lastModificationDate": 1691682437512,
+      "contentHash": "7461ba1a3a7090d25096c16c8dc4d80e",
+      "sourceName": "contracts/hardhat-dependency-compiler/@lyrafinance/protocol/contracts/libraries/FixedPointMathLib.sol",
+      "solcConfig": {
+        "version": "0.8.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@lyrafinance/protocol/contracts/libraries/FixedPointMathLib.sol"
+      ],
+      "versionPragmas": [
+        ">0.0.0"
+      ],
+      "artifacts": []
+    },
+    "/Users/voith/Projects/lyra-integration/contracts/hardhat-dependency-compiler/@lyrafinance/protocol/contracts/libraries/BlackScholes.sol": {
+      "lastModificationDate": 1691682437512,
+      "contentHash": "12e1a1d72b5f41f805c251ca120274f4",
+      "sourceName": "contracts/hardhat-dependency-compiler/@lyrafinance/protocol/contracts/libraries/BlackScholes.sol",
+      "solcConfig": {
+        "version": "0.8.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@lyrafinance/protocol/contracts/libraries/BlackScholes.sol"
+      ],
+      "versionPragmas": [
+        ">0.0.0"
+      ],
+      "artifacts": []
+    },
+    "/Users/voith/Projects/lyra-integration/contracts/hardhat-dependency-compiler/@lyrafinance/protocol/contracts/synthetix/SignedDecimalMath.sol": {
+      "lastModificationDate": 1691682437515,
+      "contentHash": "9d065bddddb64b201615ce3c01f36b6e",
+      "sourceName": "contracts/hardhat-dependency-compiler/@lyrafinance/protocol/contracts/synthetix/SignedDecimalMath.sol",
+      "solcConfig": {
+        "version": "0.8.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@lyrafinance/protocol/contracts/synthetix/SignedDecimalMath.sol"
+      ],
+      "versionPragmas": [
+        ">0.0.0"
+      ],
+      "artifacts": []
+    },
+    "/Users/voith/Projects/lyra-integration/contracts/hardhat-dependency-compiler/@lyrafinance/protocol/contracts/libraries/PoolHedger.sol": {
+      "lastModificationDate": 1691682437513,
+      "contentHash": "359feae3469582d02c9c186dd163b25a",
+      "sourceName": "contracts/hardhat-dependency-compiler/@lyrafinance/protocol/contracts/libraries/PoolHedger.sol",
+      "solcConfig": {
+        "version": "0.8.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@lyrafinance/protocol/contracts/libraries/PoolHedger.sol"
+      ],
+      "versionPragmas": [
+        ">0.0.0"
+      ],
+      "artifacts": []
+    },
+    "/Users/voith/Projects/lyra-integration/node_modules/@lyrafinance/protocol/contracts/periphery/MultistepSwapper.sol": {
+      "lastModificationDate": 1691666200081,
+      "contentHash": "4b410b8109814a4c52adc2e841260bd0",
+      "sourceName": "@lyrafinance/protocol/contracts/periphery/MultistepSwapper.sol",
+      "solcConfig": {
+        "version": "0.8.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "openzeppelin-contracts-4.4.1/security/ReentrancyGuard.sol",
+        "../interfaces/ISwapRouter.sol",
+        "../interfaces/ISynthetix.sol",
+        "openzeppelin-contracts-4.4.1/token/ERC20/IERC20.sol"
+      ],
+      "versionPragmas": [
+        "0.8.16"
+      ],
+      "artifacts": [
+        "MultistepSwapper"
+      ]
+    },
+    "/Users/voith/Projects/lyra-integration/node_modules/@lyrafinance/protocol/contracts/interfaces/ISwapRouter.sol": {
+      "lastModificationDate": 1691666200081,
+      "contentHash": "eb90db16bc5beb9eb15069288d17e230",
+      "sourceName": "@lyrafinance/protocol/contracts/interfaces/ISwapRouter.sol",
+      "solcConfig": {
+        "version": "0.8.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.8.16"
+      ],
+      "artifacts": [
+        "ISwapRouter",
+        "IUniswapV3SwapCallback"
+      ]
+    },
+    "/Users/voith/Projects/lyra-integration/contracts/hardhat-dependency-compiler/@lyrafinance/protocol/contracts/interfaces/ILiquidityPool.sol": {
+      "lastModificationDate": 1691682437513,
+      "contentHash": "ca8176d58f6ada426f67023c5224fe8c",
+      "sourceName": "contracts/hardhat-dependency-compiler/@lyrafinance/protocol/contracts/interfaces/ILiquidityPool.sol",
+      "solcConfig": {
+        "version": "0.8.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@lyrafinance/protocol/contracts/interfaces/ILiquidityPool.sol"
+      ],
+      "versionPragmas": [
+        ">0.0.0"
+      ],
+      "artifacts": []
+    },
+    "/Users/voith/Projects/lyra-integration/contracts/hardhat-dependency-compiler/@lyrafinance/protocol/contracts/interfaces/IOptionMarketPricer.sol": {
+      "lastModificationDate": 1691682437513,
+      "contentHash": "89d1f44104756fb8d4066a2b11b01ac6",
+      "sourceName": "contracts/hardhat-dependency-compiler/@lyrafinance/protocol/contracts/interfaces/IOptionMarketPricer.sol",
+      "solcConfig": {
+        "version": "0.8.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@lyrafinance/protocol/contracts/interfaces/IOptionMarketPricer.sol"
+      ],
+      "versionPragmas": [
+        ">0.0.0"
+      ],
+      "artifacts": []
+    },
+    "/Users/voith/Projects/lyra-integration/contracts/hardhat-dependency-compiler/@lyrafinance/protocol/contracts/interfaces/IOptionGreekCache.sol": {
+      "lastModificationDate": 1691682437513,
+      "contentHash": "355780b99709ffc05e33fa2c343d56b0",
+      "sourceName": "contracts/hardhat-dependency-compiler/@lyrafinance/protocol/contracts/interfaces/IOptionGreekCache.sol",
+      "solcConfig": {
+        "version": "0.8.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@lyrafinance/protocol/contracts/interfaces/IOptionGreekCache.sol"
+      ],
+      "versionPragmas": [
+        ">0.0.0"
+      ],
+      "artifacts": []
+    },
+    "/Users/voith/Projects/lyra-integration/contracts/hardhat-dependency-compiler/@lyrafinance/protocol/contracts/interfaces/IShortCollateral.sol": {
+      "lastModificationDate": 1691682437514,
+      "contentHash": "cf54b85a8d28244f8fcfefafd4933e71",
+      "sourceName": "contracts/hardhat-dependency-compiler/@lyrafinance/protocol/contracts/interfaces/IShortCollateral.sol",
+      "solcConfig": {
+        "version": "0.8.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@lyrafinance/protocol/contracts/interfaces/IShortCollateral.sol"
+      ],
+      "versionPragmas": [
+        ">0.0.0"
+      ],
+      "artifacts": []
+    },
+    "/Users/voith/Projects/lyra-integration/contracts/hardhat-dependency-compiler/@lyrafinance/protocol/contracts/interfaces/IOptionMarket.sol": {
+      "lastModificationDate": 1691682437513,
+      "contentHash": "22526deba91327b8beef8ec43a278e8f",
+      "sourceName": "contracts/hardhat-dependency-compiler/@lyrafinance/protocol/contracts/interfaces/IOptionMarket.sol",
+      "solcConfig": {
+        "version": "0.8.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@lyrafinance/protocol/contracts/interfaces/IOptionMarket.sol"
+      ],
+      "versionPragmas": [
+        ">0.0.0"
+      ],
+      "artifacts": []
+    },
+    "/Users/voith/Projects/lyra-integration/contracts/hardhat-dependency-compiler/@lyrafinance/protocol/contracts/interfaces/ISynthetixAdapter.sol": {
+      "lastModificationDate": 1691682437514,
+      "contentHash": "12739d9ef6e493723ce54af4f58324c1",
+      "sourceName": "contracts/hardhat-dependency-compiler/@lyrafinance/protocol/contracts/interfaces/ISynthetixAdapter.sol",
+      "solcConfig": {
+        "version": "0.8.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@lyrafinance/protocol/contracts/interfaces/ISynthetixAdapter.sol"
+      ],
+      "versionPragmas": [
+        ">0.0.0"
+      ],
+      "artifacts": []
+    },
+    "/Users/voith/Projects/lyra-integration/contracts/hardhat-dependency-compiler/@lyrafinance/protocol/contracts/periphery/MultistepSwapper.sol": {
+      "lastModificationDate": 1691682437514,
+      "contentHash": "c58b1945c9647b530599d4f3e4e5206a",
+      "sourceName": "contracts/hardhat-dependency-compiler/@lyrafinance/protocol/contracts/periphery/MultistepSwapper.sol",
+      "solcConfig": {
+        "version": "0.8.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@lyrafinance/protocol/contracts/periphery/MultistepSwapper.sol"
+      ],
+      "versionPragmas": [
+        ">0.0.0"
+      ],
+      "artifacts": []
+    },
+    "/Users/voith/Projects/lyra-integration/contracts/hardhat-dependency-compiler/openzeppelin-contracts-4.4.1/security/ReentrancyGuard.sol": {
+      "lastModificationDate": 1691682437516,
+      "contentHash": "dfc0f839757c0cf7ecc53a276428a2a2",
+      "sourceName": "contracts/hardhat-dependency-compiler/openzeppelin-contracts-4.4.1/security/ReentrancyGuard.sol",
+      "solcConfig": {
+        "version": "0.8.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "openzeppelin-contracts-4.4.1/security/ReentrancyGuard.sol"
+      ],
+      "versionPragmas": [
+        ">0.0.0"
+      ],
+      "artifacts": []
+    },
+    "/Users/voith/Projects/lyra-integration/contracts/hardhat-dependency-compiler/@lyrafinance/protocol/contracts/LiquidityToken.sol": {
+      "lastModificationDate": 1691682437513,
+      "contentHash": "cd0de9b68aeab17afcdf94efdb14d550",
+      "sourceName": "contracts/hardhat-dependency-compiler/@lyrafinance/protocol/contracts/LiquidityToken.sol",
+      "solcConfig": {
+        "version": "0.8.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@lyrafinance/protocol/contracts/LiquidityToken.sol"
+      ],
+      "versionPragmas": [
+        ">0.0.0"
+      ],
+      "artifacts": []
+    },
+    "/Users/voith/Projects/lyra-integration/contracts/hardhat-dependency-compiler/@lyrafinance/protocol/contracts/libraries/SimpleInitializable.sol": {
+      "lastModificationDate": 1691682437513,
+      "contentHash": "3ede6aa39f6c06d41c5df60a7c7811b9",
+      "sourceName": "contracts/hardhat-dependency-compiler/@lyrafinance/protocol/contracts/libraries/SimpleInitializable.sol",
+      "solcConfig": {
+        "version": "0.8.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@lyrafinance/protocol/contracts/libraries/SimpleInitializable.sol"
+      ],
+      "versionPragmas": [
+        ">0.0.0"
+      ],
+      "artifacts": []
+    },
+    "/Users/voith/Projects/lyra-integration/contracts/hardhat-dependency-compiler/@lyrafinance/protocol/contracts/ShortCollateral.sol": {
+      "lastModificationDate": 1691682437513,
+      "contentHash": "e9c9d68d16971f76e0244a0334889ca6",
+      "sourceName": "contracts/hardhat-dependency-compiler/@lyrafinance/protocol/contracts/ShortCollateral.sol",
+      "solcConfig": {
+        "version": "0.8.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@lyrafinance/protocol/contracts/ShortCollateral.sol"
+      ],
+      "versionPragmas": [
+        ">0.0.0"
+      ],
+      "artifacts": []
+    },
+    "/Users/voith/Projects/lyra-integration/contracts/hardhat-dependency-compiler/@lyrafinance/protocol/contracts/synthetix/DecimalMath.sol": {
+      "lastModificationDate": 1691682437514,
+      "contentHash": "0cc290a75b24e982ca6a12a4d8e503a8",
+      "sourceName": "contracts/hardhat-dependency-compiler/@lyrafinance/protocol/contracts/synthetix/DecimalMath.sol",
+      "solcConfig": {
+        "version": "0.8.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@lyrafinance/protocol/contracts/synthetix/DecimalMath.sol"
+      ],
+      "versionPragmas": [
+        ">0.0.0"
+      ],
+      "artifacts": []
+    },
+    "/Users/voith/Projects/lyra-integration/contracts/hardhat-dependency-compiler/@lyrafinance/protocol/contracts/periphery/GWAVOracle.sol": {
+      "lastModificationDate": 1691682437514,
+      "contentHash": "bb289509865ea9d21df225a9926014f4",
+      "sourceName": "contracts/hardhat-dependency-compiler/@lyrafinance/protocol/contracts/periphery/GWAVOracle.sol",
+      "solcConfig": {
+        "version": "0.8.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@lyrafinance/protocol/contracts/periphery/GWAVOracle.sol"
+      ],
+      "versionPragmas": [
+        ">0.0.0"
+      ],
+      "artifacts": []
+    },
+    "/Users/voith/Projects/lyra-integration/contracts/hardhat-dependency-compiler/@lyrafinance/protocol/contracts/OptionGreekCache.sol": {
+      "lastModificationDate": 1691682437513,
+      "contentHash": "2e9c806e58ce93f077b32b330ef55cea",
+      "sourceName": "contracts/hardhat-dependency-compiler/@lyrafinance/protocol/contracts/OptionGreekCache.sol",
+      "solcConfig": {
+        "version": "0.8.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@lyrafinance/protocol/contracts/OptionGreekCache.sol"
+      ],
+      "versionPragmas": [
+        ">0.0.0"
+      ],
+      "artifacts": []
+    },
+    "/Users/voith/Projects/lyra-integration/contracts/hardhat-dependency-compiler/@lyrafinance/protocol/contracts/periphery/OptionMarketViewer.sol": {
+      "lastModificationDate": 1691682437514,
+      "contentHash": "46b19ce3e33b99bfba1ff2f09ccbe3f7",
+      "sourceName": "contracts/hardhat-dependency-compiler/@lyrafinance/protocol/contracts/periphery/OptionMarketViewer.sol",
+      "solcConfig": {
+        "version": "0.8.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@lyrafinance/protocol/contracts/periphery/OptionMarketViewer.sol"
+      ],
+      "versionPragmas": [
+        ">0.0.0"
+      ],
+      "artifacts": []
+    },
+    "/Users/voith/Projects/lyra-integration/contracts/hardhat-dependency-compiler/@lyrafinance/protocol/contracts/OptionToken.sol": {
+      "lastModificationDate": 1691682437513,
+      "contentHash": "cecbd7bfebdeb140553d4bd720792dd5",
+      "sourceName": "contracts/hardhat-dependency-compiler/@lyrafinance/protocol/contracts/OptionToken.sol",
+      "solcConfig": {
+        "version": "0.8.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@lyrafinance/protocol/contracts/OptionToken.sol"
+      ],
+      "versionPragmas": [
+        ">0.0.0"
+      ],
+      "artifacts": []
+    },
+    "/Users/voith/Projects/lyra-integration/contracts/hardhat-dependency-compiler/openzeppelin-contracts-4.4.1/token/ERC721/extensions/ERC721Enumerable.sol": {
+      "lastModificationDate": 1691682437516,
+      "contentHash": "5b4d0765909faa9cdc5b6cd949513660",
+      "sourceName": "contracts/hardhat-dependency-compiler/openzeppelin-contracts-4.4.1/token/ERC721/extensions/ERC721Enumerable.sol",
+      "solcConfig": {
+        "version": "0.8.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "openzeppelin-contracts-4.4.1/token/ERC721/extensions/ERC721Enumerable.sol"
+      ],
+      "versionPragmas": [
+        ">0.0.0"
+      ],
+      "artifacts": []
+    },
+    "/Users/voith/Projects/lyra-integration/contracts/hardhat-dependency-compiler/@lyrafinance/protocol/contracts/interfaces/IOptionToken.sol": {
+      "lastModificationDate": 1691682437513,
+      "contentHash": "41973cb4668279351c579a6336bf59ef",
+      "sourceName": "contracts/hardhat-dependency-compiler/@lyrafinance/protocol/contracts/interfaces/IOptionToken.sol",
+      "solcConfig": {
+        "version": "0.8.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@lyrafinance/protocol/contracts/interfaces/IOptionToken.sol"
+      ],
+      "versionPragmas": [
+        ">0.0.0"
+      ],
+      "artifacts": []
+    },
+    "/Users/voith/Projects/lyra-integration/contracts/hardhat-dependency-compiler/@lyrafinance/protocol/contracts/interfaces/ILyraRegistry.sol": {
+      "lastModificationDate": 1691682437513,
+      "contentHash": "8682ee86741cd1cd4d1cc3f1dcf44266",
+      "sourceName": "contracts/hardhat-dependency-compiler/@lyrafinance/protocol/contracts/interfaces/ILyraRegistry.sol",
+      "solcConfig": {
+        "version": "0.8.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@lyrafinance/protocol/contracts/interfaces/ILyraRegistry.sol"
+      ],
+      "versionPragmas": [
+        ">0.0.0"
+      ],
+      "artifacts": []
+    },
+    "/Users/voith/Projects/lyra-integration/contracts/hardhat-dependency-compiler/@lyrafinance/protocol/contracts/interfaces/IGWAVOracle.sol": {
+      "lastModificationDate": 1691682437513,
+      "contentHash": "0e4facd24c287e135a23272b85b86d89",
+      "sourceName": "contracts/hardhat-dependency-compiler/@lyrafinance/protocol/contracts/interfaces/IGWAVOracle.sol",
+      "solcConfig": {
+        "version": "0.8.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@lyrafinance/protocol/contracts/interfaces/IGWAVOracle.sol"
+      ],
+      "versionPragmas": [
+        ">0.0.0"
+      ],
+      "artifacts": []
+    },
+    "/Users/voith/Projects/lyra-integration/contracts/hardhat-dependency-compiler/@lyrafinance/protocol/contracts/interfaces/ICurve.sol": {
+      "lastModificationDate": 1691682437513,
+      "contentHash": "4d542276ebd951a03a00081b23327137",
+      "sourceName": "contracts/hardhat-dependency-compiler/@lyrafinance/protocol/contracts/interfaces/ICurve.sol",
+      "solcConfig": {
+        "version": "0.8.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@lyrafinance/protocol/contracts/interfaces/ICurve.sol"
+      ],
+      "versionPragmas": [
+        ">0.0.0"
+      ],
+      "artifacts": []
+    },
+    "/Users/voith/Projects/lyra-integration/contracts/hardhat-dependency-compiler/@lyrafinance/protocol/contracts/periphery/LyraAdapter.sol": {
+      "lastModificationDate": 1691682437514,
+      "contentHash": "d6af7a51a670f46fb0e8306559a43dcd",
+      "sourceName": "contracts/hardhat-dependency-compiler/@lyrafinance/protocol/contracts/periphery/LyraAdapter.sol",
+      "solcConfig": {
+        "version": "0.8.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@lyrafinance/protocol/contracts/periphery/LyraAdapter.sol"
+      ],
+      "versionPragmas": [
+        ">0.0.0"
+      ],
+      "artifacts": []
+    },
+    "/Users/voith/Projects/lyra-integration/contracts/hardhat-dependency-compiler/@lyrafinance/protocol/contracts/periphery/BasicFeeCounter.sol": {
+      "lastModificationDate": 1691682437514,
+      "contentHash": "c83ec684566eed37cb560b83335665b7",
+      "sourceName": "contracts/hardhat-dependency-compiler/@lyrafinance/protocol/contracts/periphery/BasicFeeCounter.sol",
+      "solcConfig": {
+        "version": "0.8.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@lyrafinance/protocol/contracts/periphery/BasicFeeCounter.sol"
+      ],
+      "versionPragmas": [
+        ">0.0.0"
+      ],
+      "artifacts": []
+    },
+    "/Users/voith/Projects/lyra-integration/contracts/hardhat-dependency-compiler/@lyrafinance/protocol/contracts/periphery/Wrapper/OptionMarketWrapperWithSwaps.sol": {
+      "lastModificationDate": 1691682437514,
+      "contentHash": "e0494973eeb90edc58166ac86dd511a5",
+      "sourceName": "contracts/hardhat-dependency-compiler/@lyrafinance/protocol/contracts/periphery/Wrapper/OptionMarketWrapperWithSwaps.sol",
+      "solcConfig": {
+        "version": "0.8.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@lyrafinance/protocol/contracts/periphery/Wrapper/OptionMarketWrapperWithSwaps.sol"
+      ],
+      "versionPragmas": [
+        ">0.0.0"
+      ],
+      "artifacts": []
+    },
+    "/Users/voith/Projects/lyra-integration/node_modules/@lyrafinance/protocol/contracts/periphery/KeeperHelper.sol": {
+      "lastModificationDate": 1691666200081,
+      "contentHash": "5503b09ac8229d74f31aea144c6c2075",
+      "sourceName": "@lyrafinance/protocol/contracts/periphery/KeeperHelper.sol",
+      "solcConfig": {
+        "version": "0.8.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../OptionMarket.sol"
+      ],
+      "versionPragmas": [
+        "0.8.16"
+      ],
+      "artifacts": [
+        "KeeperHelper"
+      ]
+    },
+    "/Users/voith/Projects/lyra-integration/contracts/hardhat-dependency-compiler/@lyrafinance/protocol/contracts/periphery/KeeperHelper.sol": {
+      "lastModificationDate": 1691682437514,
+      "contentHash": "605054a121d2edcae340dbe64afa0259",
+      "sourceName": "contracts/hardhat-dependency-compiler/@lyrafinance/protocol/contracts/periphery/KeeperHelper.sol",
+      "solcConfig": {
+        "version": "0.8.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@lyrafinance/protocol/contracts/periphery/KeeperHelper.sol"
+      ],
+      "versionPragmas": [
+        ">0.0.0"
+      ],
+      "artifacts": []
+    },
+    "/Users/voith/Projects/lyra-integration/contracts/hardhat-dependency-compiler/@lyrafinance/protocol/contracts/OptionMarket.sol": {
+      "lastModificationDate": 1691682437513,
+      "contentHash": "f5bc32cc135c56106ced4054b37f9b09",
+      "sourceName": "contracts/hardhat-dependency-compiler/@lyrafinance/protocol/contracts/OptionMarket.sol",
+      "solcConfig": {
+        "version": "0.8.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@lyrafinance/protocol/contracts/OptionMarket.sol"
+      ],
+      "versionPragmas": [
+        ">0.0.0"
+      ],
+      "artifacts": []
+    },
+    "/Users/voith/Projects/lyra-integration/contracts/hardhat-dependency-compiler/@lyrafinance/protocol/contracts/periphery/Wrapper/BasicOptionMarketWrapper.sol": {
+      "lastModificationDate": 1691682437514,
+      "contentHash": "9713df7efe0e8f8d951f5171796dd766",
+      "sourceName": "contracts/hardhat-dependency-compiler/@lyrafinance/protocol/contracts/periphery/Wrapper/BasicOptionMarketWrapper.sol",
+      "solcConfig": {
+        "version": "0.8.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@lyrafinance/protocol/contracts/periphery/Wrapper/BasicOptionMarketWrapper.sol"
+      ],
+      "versionPragmas": [
+        ">0.0.0"
+      ],
+      "artifacts": []
+    },
+    "/Users/voith/Projects/lyra-integration/node_modules/openzeppelin-contracts-upgradeable-4.5.1/utils/ContextUpgradeable.sol": {
+      "lastModificationDate": 1691666200050,
+      "contentHash": "6200b84950eb05b4a92a39fd1d6e0f9b",
+      "sourceName": "openzeppelin-contracts-upgradeable-4.5.1/utils/ContextUpgradeable.sol",
+      "solcConfig": {
+        "version": "0.8.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../proxy/utils/Initializable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ContextUpgradeable"
+      ]
+    },
+    "/Users/voith/Projects/lyra-integration/node_modules/openzeppelin-contracts-upgradeable-4.5.1/access/OwnableUpgradeable.sol": {
+      "lastModificationDate": 1691666200045,
+      "contentHash": "11b77de3cb69dfc6b342ec87bd09cbdd",
+      "sourceName": "openzeppelin-contracts-upgradeable-4.5.1/access/OwnableUpgradeable.sol",
+      "solcConfig": {
+        "version": "0.8.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../utils/ContextUpgradeable.sol",
+        "../proxy/utils/Initializable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "OwnableUpgradeable"
+      ]
+    },
+    "/Users/voith/Projects/lyra-integration/contracts/hardhat-dependency-compiler/openzeppelin-contracts-upgradeable-4.5.1/access/OwnableUpgradeable.sol": {
+      "lastModificationDate": 1691682437515,
+      "contentHash": "a70961d96367abe01db29574f3813117",
+      "sourceName": "contracts/hardhat-dependency-compiler/openzeppelin-contracts-upgradeable-4.5.1/access/OwnableUpgradeable.sol",
+      "solcConfig": {
+        "version": "0.8.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "openzeppelin-contracts-upgradeable-4.5.1/access/OwnableUpgradeable.sol"
+      ],
+      "versionPragmas": [
+        ">0.0.0"
+      ],
+      "artifacts": []
+    },
+    "/Users/voith/Projects/lyra-integration/contracts/hardhat-dependency-compiler/@lyrafinance/protocol/contracts/synthetix/OwnedUpgradeable.sol": {
+      "lastModificationDate": 1691682437515,
+      "contentHash": "ed6181c17fb0e46f5f713f27aa0b739b",
+      "sourceName": "contracts/hardhat-dependency-compiler/@lyrafinance/protocol/contracts/synthetix/OwnedUpgradeable.sol",
+      "solcConfig": {
+        "version": "0.8.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@lyrafinance/protocol/contracts/synthetix/OwnedUpgradeable.sol"
+      ],
+      "versionPragmas": [
+        ">0.0.0"
+      ],
+      "artifacts": []
+    },
+    "/Users/voith/Projects/lyra-integration/contracts/hardhat-dependency-compiler/@lyrafinance/protocol/contracts/synthetix/AbstractOwned.sol": {
+      "lastModificationDate": 1691682437514,
+      "contentHash": "a7f6a10b5848ac82d39900e1ea4577f8",
+      "sourceName": "contracts/hardhat-dependency-compiler/@lyrafinance/protocol/contracts/synthetix/AbstractOwned.sol",
+      "solcConfig": {
+        "version": "0.8.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@lyrafinance/protocol/contracts/synthetix/AbstractOwned.sol"
+      ],
+      "versionPragmas": [
+        ">0.0.0"
+      ],
+      "artifacts": []
+    },
+    "/Users/voith/Projects/lyra-integration/node_modules/@lyrafinance/protocol/contracts/periphery/BasicLiquidityCounter.sol": {
+      "lastModificationDate": 1691666200081,
+      "contentHash": "e3f176eaecc90cce8d907e9ad8ffe05b",
+      "sourceName": "@lyrafinance/protocol/contracts/periphery/BasicLiquidityCounter.sol",
+      "solcConfig": {
+        "version": "0.8.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../synthetix/Owned.sol"
+      ],
+      "versionPragmas": [
+        "0.8.16"
+      ],
+      "artifacts": [
+        "BasicLiquidityCounter"
+      ]
+    },
+    "/Users/voith/Projects/lyra-integration/contracts/hardhat-dependency-compiler/@lyrafinance/protocol/contracts/periphery/BasicLiquidityCounter.sol": {
+      "lastModificationDate": 1691682437514,
+      "contentHash": "cc6c8d3926167794aa228d67f3406cbc",
+      "sourceName": "contracts/hardhat-dependency-compiler/@lyrafinance/protocol/contracts/periphery/BasicLiquidityCounter.sol",
+      "solcConfig": {
+        "version": "0.8.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@lyrafinance/protocol/contracts/periphery/BasicLiquidityCounter.sol"
+      ],
+      "versionPragmas": [
+        ">0.0.0"
+      ],
+      "artifacts": []
+    },
+    "/Users/voith/Projects/lyra-integration/contracts/hardhat-dependency-compiler/@lyrafinance/protocol/contracts/synthetix/Owned.sol": {
+      "lastModificationDate": 1691682437515,
+      "contentHash": "3209418015667a90c4ffefffe1745b21",
+      "sourceName": "contracts/hardhat-dependency-compiler/@lyrafinance/protocol/contracts/synthetix/Owned.sol",
+      "solcConfig": {
+        "version": "0.8.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@lyrafinance/protocol/contracts/synthetix/Owned.sol"
+      ],
+      "versionPragmas": [
+        ">0.0.0"
+      ],
+      "artifacts": []
+    },
+    "/Users/voith/Projects/lyra-integration/contracts/hardhat-dependency-compiler/@lyrafinance/protocol/contracts/test-helpers/TestCurve.sol": {
+      "lastModificationDate": 1691682437515,
+      "contentHash": "892eb93c60e10c15175257407fcfe58d",
+      "sourceName": "contracts/hardhat-dependency-compiler/@lyrafinance/protocol/contracts/test-helpers/TestCurve.sol",
+      "solcConfig": {
+        "version": "0.8.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@lyrafinance/protocol/contracts/test-helpers/TestCurve.sol"
+      ],
+      "versionPragmas": [
+        ">0.0.0"
+      ],
+      "artifacts": []
+    },
+    "/Users/voith/Projects/lyra-integration/contracts/hardhat-dependency-compiler/@lyrafinance/protocol/contracts/test-helpers/TestERC20.sol": {
+      "lastModificationDate": 1691682437515,
+      "contentHash": "0c92bb2d61ae42c40c9b50ce3bd9b174",
+      "sourceName": "contracts/hardhat-dependency-compiler/@lyrafinance/protocol/contracts/test-helpers/TestERC20.sol",
+      "solcConfig": {
+        "version": "0.8.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@lyrafinance/protocol/contracts/test-helpers/TestERC20.sol"
+      ],
+      "versionPragmas": [
+        ">0.0.0"
+      ],
+      "artifacts": []
+    },
+    "/Users/voith/Projects/lyra-integration/contracts/hardhat-dependency-compiler/openzeppelin-contracts-4.4.1/token/ERC20/ERC20.sol": {
+      "lastModificationDate": 1691682437515,
+      "contentHash": "fd1afe38b5627b16e483a60a63aefb79",
+      "sourceName": "contracts/hardhat-dependency-compiler/openzeppelin-contracts-4.4.1/token/ERC20/ERC20.sol",
+      "solcConfig": {
+        "version": "0.8.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "openzeppelin-contracts-4.4.1/token/ERC20/ERC20.sol"
+      ],
+      "versionPragmas": [
+        ">0.0.0"
+      ],
+      "artifacts": []
+    },
+    "/Users/voith/Projects/lyra-integration/contracts/hardhat-dependency-compiler/@lyrafinance/protocol/contracts/test-helpers/TestERC20SetDecimals.sol": {
+      "lastModificationDate": 1691682437515,
+      "contentHash": "64d64270e1f7ac24a3d7a5908bccbfd3",
+      "sourceName": "contracts/hardhat-dependency-compiler/@lyrafinance/protocol/contracts/test-helpers/TestERC20SetDecimals.sol",
+      "solcConfig": {
+        "version": "0.8.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@lyrafinance/protocol/contracts/test-helpers/TestERC20SetDecimals.sol"
+      ],
+      "versionPragmas": [
+        ">0.0.0"
+      ],
+      "artifacts": []
+    },
+    "/Users/voith/Projects/lyra-integration/contracts/hardhat-dependency-compiler/@lyrafinance/protocol/contracts/test-helpers/BytesLib.sol": {
+      "lastModificationDate": 1691682437515,
+      "contentHash": "ac7383542cfac2745b1bd16f912c9bb7",
+      "sourceName": "contracts/hardhat-dependency-compiler/@lyrafinance/protocol/contracts/test-helpers/BytesLib.sol",
+      "solcConfig": {
+        "version": "0.8.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@lyrafinance/protocol/contracts/test-helpers/BytesLib.sol"
+      ],
+      "versionPragmas": [
+        ">0.0.0"
+      ],
+      "artifacts": []
+    },
+    "/Users/voith/Projects/lyra-integration/node_modules/@lyrafinance/protocol/contracts/test-helpers/BytesLib.sol": {
+      "lastModificationDate": 1691666200109,
+      "contentHash": "4b0b72d7c8c4ce5bb173227bb97bb7e7",
+      "sourceName": "@lyrafinance/protocol/contracts/test-helpers/BytesLib.sol",
+      "solcConfig": {
+        "version": "0.8.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.8.16"
+      ],
+      "artifacts": [
+        "BytesLib"
+      ]
+    },
+    "/Users/voith/Projects/lyra-integration/node_modules/@lyrafinance/protocol/contracts/test-helpers/Path.sol": {
+      "lastModificationDate": 1691666200109,
+      "contentHash": "e7dcdde522d1cae38bf49ad592b96753",
+      "sourceName": "@lyrafinance/protocol/contracts/test-helpers/Path.sol",
+      "solcConfig": {
+        "version": "0.8.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./BytesLib.sol"
+      ],
+      "versionPragmas": [
+        "0.8.16"
+      ],
+      "artifacts": [
+        "Path"
+      ]
+    },
+    "/Users/voith/Projects/lyra-integration/contracts/hardhat-dependency-compiler/@lyrafinance/protocol/contracts/test-helpers/Path.sol": {
+      "lastModificationDate": 1691682437515,
+      "contentHash": "730f7456191672c3e3b735c7bd5c18db",
+      "sourceName": "contracts/hardhat-dependency-compiler/@lyrafinance/protocol/contracts/test-helpers/Path.sol",
+      "solcConfig": {
+        "version": "0.8.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@lyrafinance/protocol/contracts/test-helpers/Path.sol"
+      ],
+      "versionPragmas": [
+        ">0.0.0"
+      ],
+      "artifacts": []
+    },
+    "/Users/voith/Projects/lyra-integration/contracts/hardhat-dependency-compiler/@lyrafinance/protocol/contracts/test-helpers/MockAggregatorV2V3.sol": {
+      "lastModificationDate": 1691682437515,
+      "contentHash": "7958d2fa394d668c796c077c6553fbd3",
+      "sourceName": "contracts/hardhat-dependency-compiler/@lyrafinance/protocol/contracts/test-helpers/MockAggregatorV2V3.sol",
+      "solcConfig": {
+        "version": "0.8.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@lyrafinance/protocol/contracts/test-helpers/MockAggregatorV2V3.sol"
+      ],
+      "versionPragmas": [
+        ">0.0.0"
+      ],
+      "artifacts": []
+    },
+    "/Users/voith/Projects/lyra-integration/node_modules/@lyrafinance/protocol/contracts/test-helpers/MockAggregatorV2V3.sol": {
+      "lastModificationDate": 1691666200109,
+      "contentHash": "4092267c03e666595b508a795ad7b825",
+      "sourceName": "@lyrafinance/protocol/contracts/test-helpers/MockAggregatorV2V3.sol",
+      "solcConfig": {
+        "version": "0.8.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../interfaces/IAggregatorV3.sol"
+      ],
+      "versionPragmas": [
+        "0.8.16"
+      ],
+      "artifacts": [
+        "MockAggregatorV2V3"
+      ]
+    },
+    "/Users/voith/Projects/lyra-integration/node_modules/@lyrafinance/protocol/contracts/interfaces/IAggregatorV3.sol": {
+      "lastModificationDate": 1691666200081,
+      "contentHash": "b6f362d4135a205744c13ad117372f3e",
+      "sourceName": "@lyrafinance/protocol/contracts/interfaces/IAggregatorV3.sol",
+      "solcConfig": {
+        "version": "0.8.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "AggregatorInterface",
+        "AggregatorV2V3Interface",
+        "AggregatorV3Interface"
+      ]
+    }
+  }
+}
