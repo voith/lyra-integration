@@ -1,13 +1,18 @@
-# Sample Hardhat Project
+# LyraFinance Integration
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a script that deploys that contract.
+This project does a basic with integration with lyra finance contracts and test-suite.
 
-Try running some of the following tasks:
-
-```shell
-npx hardhat help
-npx hardhat test
-REPORT_GAS=true npx hardhat test
-npx hardhat node
-npx hardhat run scripts/deploy.ts
+### Installation
+```bash
+yarn
 ```
+
+### Scripts
+1. Before running the scripts, start a node in the console
+    ```bash
+     yarn hardhat console
+    ```
+2. To buy an option using the local test suite, run
+    ```bash
+    yarn hardhat run scripts/deployBuyOption.ts
+   ```

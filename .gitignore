@@ -6,17 +6,20 @@
 
 **/.env
 
+.lyra/
 node_modules/
-cache_hardhat/
-forge-cache/
+
+#Hardhat files
+cache/
 out/
-typechain/
-typechain-types/
 artifacts/
-broadcast/
+typechain/
+artifacts-ovm/
+typechain-types/
+coverage/
+coverage.json
+.env.private*
+yarn-error.log
+.vscode/
 
-.idea/
-.idea/workspace.xml
-/out
-mnemonic.txt
-
+tmp/
