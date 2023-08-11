@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "@lyrafinance/protocol": "https://github.com/voith/lyra-protocol.git#fixes",
+    "@lyrafinance/protocol": "https://github.com/lyra-finance/lyra-protocol.git#9c7ab802421c85c8329826f898d080d5bb60794d",
     "@nomiclabs/hardhat-ethers": "^2.2.3",
     "gmx": "git+https://github.com/0xdomrom/gmx-contracts#master",
     "hardhat": "2.12.3",
