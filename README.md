@@ -2,8 +2,9 @@
 
 This project does a basic with integration with lyra finance contracts and test-suite.
 
-### Installation
+### Setup
 ```bash
+git clone https://github.com/voith/lyra-integration.git
 yarn
 ```
 
@@ -25,11 +26,11 @@ yarn
     ```bash
      yarn hardhat node
     ```
-2. To buy an option using the local test suite, run
+2. To buy an option using the local test suite, run the following in a different console
     ```bash
     yarn hardhat run scripts/deployBuyOption.ts
    ```
-3. To deploy and test the buyStraddle strategy, run
+3. To deploy and test the buyStraddle strategy, run the following in a different console
    ```bash
    yarn hardhat run scripts/testStraddleStrategy.ts
    ```
