@@ -1,6 +1,6 @@
-import "@nomiclabs/hardhat-ethers";
-import { HardhatUserConfig } from "hardhat/config";
-import "hardhat-dependency-compiler";
+import '@nomiclabs/hardhat-ethers';
+import { HardhatUserConfig } from 'hardhat/config';
+import 'hardhat-dependency-compiler';
 
 const lyraContractPaths = [
   // library
@@ -81,7 +81,7 @@ const lyraContractPaths = [
 
 const config: HardhatUserConfig = {
   solidity: {
-    version: "0.8.16",
+    version: '0.8.16',
     settings: {
       optimizer: {
         enabled: true,

@@ -12,7 +12,7 @@ contract StraddleStrategy {
   OptionGreekCache internal optionGreekCache;
   IERC20Decimals internal quoteAsset;
 
-  error QuoteTransferFailed(address thrower, address from, address to, uint amount);
+  error ERC20TransferFailed(address from, address to, uint amount);
 
   constructor(address _optionMarket, address _exchangeAdapter, address _optionGreekCache) {
     optionMarket = OptionMarket(_optionMarket);
@@ -21,12 +21,23 @@ contract StraddleStrategy {
     quoteAsset = IERC20Decimals(optionMarket.quoteAsset());
   }
 
+  /**
+   * @notice This function executes a long straddle strategy by opening equal sized long call
+   *         and long put options. The collateral needed for executing this function can be fetched
+   *         calling the `getMinCollateral` function.
+   *
+   * @dev `msg.sender` needs to approve the amount of collateral that is needed to open the
+   *       positions to this contract.
+   *
+   * @param strikeId id of strike against which the option will be opened
+   * @param size size of the option
+   */
   function buyStraddle(uint256 strikeId, uint256 size) external {
     (uint256 callCollateral, uint256 putCollateral) = getMinCollateral(strikeId, size);
     uint256 totalCollateral = callCollateral + putCollateral;
 
     if (!quoteAsset.transferFrom(msg.sender, address(this), totalCollateral)) {
-      revert QuoteTransferFailed(address(this), msg.sender, address(this), totalCollateral);
+      revert ERC20TransferFailed(msg.sender, address(this), totalCollateral);
     }
     quoteAsset.approve(address(optionMarket), totalCollateral);
 
@@ -41,12 +52,28 @@ contract StraddleStrategy {
       maxTotalCost: type(uint256).max,
       referrer: address(0)
     });
-    optionMarket.openPosition(params);
+    // Open long call option
+    OptionMarket.Result memory callResult = optionMarket.openPosition(params);
     params.optionType = OptionMarket.OptionType.LONG_PUT;
     params.setCollateralTo = putCollateral;
-    optionMarket.openPosition(params);
+    // Open long put option
+    OptionMarket.Result memory putResult = optionMarket.openPosition(params);
+
+    // Transfer back unused collateral
+    if (totalCollateral > (callResult.totalCost + putResult.totalCost)) {
+      uint256 amountToReturn = totalCollateral - (callResult.totalCost + putResult.totalCost);
+      if (!quoteAsset.transfer(msg.sender, amountToReturn)) {
+        revert ERC20TransferFailed(address(this), msg.sender, amountToReturn);
+      }
+    }
   }
 
+  /**
+   * @notice This function calculates the minimum collateral that is needed to execute `buyStraddle`.
+   *
+   * @param strikeId id of strike against which the option will be opened
+   * @param size size of the option
+   */
   function getMinCollateral(
     uint256 strikeId,
     uint256 size
