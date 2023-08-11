@@ -24,7 +24,11 @@ async function main() {
   await TestSystem.seed(deployer, localTestSystem);
 
   const straddleStrategyFactory = (await ethers.getContractFactory('StraddleStrategy')).connect(deployer)
-  const straddleStrategy = await straddleStrategyFactory.deploy(localTestSystem.optionMarket.address);
+  const straddleStrategy = await straddleStrategyFactory.deploy(
+    localTestSystem.optionMarket.address,
+    localTestSystem.synthetixAdapter.address,
+    localTestSystem.optionGreekCache.address
+  );
 
   let boardIds = await localTestSystem.optionMarket.getLiveBoards();
   let strikeIds = await localTestSystem.optionMarket.getBoardStrikes(
@@ -41,8 +45,10 @@ async function main() {
     maxTotalCost: 500,
     referrer: "0x0000000000000000000000000000000000000000",
   };
-  straddleStrategy.openPosition(params);
-  console.log("successfully bought an option");
+  console.log(await localTestSystem.snx.quoteAsset.balanceOf(deployer.address));
+  await localTestSystem.snx.quoteAsset.approve(straddleStrategy.address, "10000000000000000000000");
+  await straddleStrategy.buyStraddle(strikeIds[0], 100);
+  console.log(await localTestSystem.snx.quoteAsset.balanceOf(deployer.address));
 }
 
 main()
