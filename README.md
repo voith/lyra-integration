@@ -13,7 +13,7 @@ yarn
       This contract deploys a long straddle strategy by opening equal sized long call and long put options
    - `function getMinCollateral(uint256 strikeId, uint256 size)`
       
-    This function calculates the minimum collateral that is needed to execute `buyStraddle`
+    This function calculates the minimum collateral needed to execute `buyStraddle`
    
    - `function buyStraddle(uint256 strikeId, uint256 size)`
       
@@ -30,7 +30,7 @@ yarn
     ```bash
     yarn hardhat run scripts/deployBuyOption.ts
    ```
-3. To deploy and test the buyStraddle strategy, run the following in a different console
+3. To deploy and test the buyStraddle functionality, run the following in a different console
    ```bash
    yarn hardhat run scripts/testStraddleStrategy.ts
    ```

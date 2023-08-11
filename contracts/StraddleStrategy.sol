@@ -69,7 +69,7 @@ contract StraddleStrategy {
   }
 
   /**
-   * @notice This function calculates the minimum collateral that is needed to execute `buyStraddle`.
+   * @notice This function calculates the minimum collateral needed to execute `buyStraddle`.
    *
    * @param strikeId id of strike against which the option will be opened
    * @param size size of the option
