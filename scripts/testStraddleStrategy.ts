@@ -1,4 +1,45 @@
-import { TestSystem } from '@lyrafinance/protocol';
+import { TestSystem, TestSystemContractsType } from '@lyrafinance/protocol';
+import {
+  Quoter,
+  Quoter__factory,
+  QuoterHelper,
+  QuoterHelper__factory,
+  StraddleStrategy__factory,
+  StraddleStrategy,
+} from '../typechain-types';
+
+type SystemContracts = {
+  quoter: Quoter;
+  quoterHelper: QuoterHelper;
+  straddleStrategy: StraddleStrategy;
+};
+
+async function deployAndSetupSystemContracts(
+  deployer: ethers.Wallet,
+  localTestSystem: TestSystemContractsType,
+): Promise<SystemContracts> {
+  // deploy QuoterHelper
+  const quoterHelper = await new QuoterHelper__factory(deployer).deploy(localTestSystem.optionMarket.address);
+  // Transfer some quoteAsset tokens to quoterHelper so that it can simulate opening an option
+  // without the user having to approve and transfer tokens every single time.
+  await localTestSystem.snx.quoteAsset.transfer(
+    quoterHelper.address, ethers.utils.parseEther('10')
+  );
+  // deploy Quoter
+  const quoter = await new Quoter__factory(deployer).deploy(quoterHelper.address);
+  // deploy straddleStrategy
+  const straddleStrategy = await new StraddleStrategy__factory(deployer).deploy(
+    localTestSystem.optionMarket.address,
+    quoter.address,
+  );
+
+  const systemContracts = {
+    quoter: quoter,
+    quoterHelper: quoterHelper,
+    straddleStrategy: straddleStrategy,
+  };
+  return systemContracts as SystemContracts;
+}
 
 function assert(condition: boolean, message: string) {
   if (!condition) {
@@ -23,19 +64,15 @@ async function main() {
   let localTestSystem = await TestSystem.deploy(deployer, linkTracer, exportAddresses);
   await TestSystem.seed(deployer, localTestSystem);
 
-  // deploy straddleStrategy
-  const straddleStrategyFactory = (await ethers.getContractFactory('StraddleStrategy')).connect(deployer);
-  const straddleStrategy = await straddleStrategyFactory.deploy(
-    localTestSystem.optionMarket.address,
-    localTestSystem.synthetixAdapter.address,
-    localTestSystem.optionGreekCache.address,
-  );
+  const systemContracts = await deployAndSetupSystemContracts(deployer, localTestSystem);
 
   // checks before executing buyStraddle
-  let deployerInitialBalance = await localTestSystem.snx.quoteAsset.balanceOf(deployer.address);
+  const straddleStrategy = systemContracts.straddleStrategy;
+  const deployerInitialBalance = await localTestSystem.snx.quoteAsset.balanceOf(deployer.address);
+
   assert(
-    (await localTestSystem.snx.quoteAsset.balanceOf(straddleStrategy.address)) == 0,
-    'quoteAsset balance of straddleStrategy should be 0',
+    (await localTestSystem.snx.quoteAsset.balanceOf(straddleStrategy.address)).eq(0),
+    'quoteAsset balance of straddleStrategy should be 0 before executing buyStraddle',
   );
   assert(
     (await localTestSystem.optionToken.balanceOf(straddleStrategy.address)) == 0,
@@ -43,11 +80,11 @@ async function main() {
   );
 
   // execute buyStraddle
-  let boardIds = await localTestSystem.optionMarket.getLiveBoards();
-  let strikeIds = await localTestSystem.optionMarket.getBoardStrikes(boardIds[0]);
-  let strikeID = strikeIds[0];
-  let { callCollateral, putCollateral } = await straddleStrategy.getMinCollateral(strikeID, 100);
-  await localTestSystem.snx.quoteAsset.approve(straddleStrategy.address, callCollateral + putCollateral);
+  const boardIds = await localTestSystem.optionMarket.getLiveBoards();
+  const strikeIds = await localTestSystem.optionMarket.getBoardStrikes(boardIds[0]);
+  const strikeID = strikeIds[1];
+  const estimatedCost = await straddleStrategy.callStatic.quoteBuyStraddle(strikeID, 100);
+  await localTestSystem.snx.quoteAsset.approve(straddleStrategy.address, estimatedCost);
   await straddleStrategy.buyStraddle(strikeID, 100);
 
   // checks after executing buyStraddle
@@ -58,7 +95,7 @@ async function main() {
     'deployer balance should be less than initial balance after executing buyStraddle',
   );
   assert(
-    (await localTestSystem.snx.quoteAsset.balanceOf(straddleStrategy.address)) == 0,
+    (await localTestSystem.snx.quoteAsset.balanceOf(straddleStrategy.address)).eq(0),
     'quoteAsset balance of straddleStrategy should be 0 after executing buyStraddle',
   );
   assert(
@@ -70,7 +107,7 @@ async function main() {
   assert(longCall.optionType == TestSystem.OptionType.LONG_CALL, 'option type should match');
   assert(longPut.optionType == TestSystem.OptionType.LONG_PUT, 'option type should match');
 
-  console.log('execute buyStraddle and tested it successfully');
+  console.log('executed buyStraddle and tested it successfully');
 }
 
 main()

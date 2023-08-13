@@ -2,6 +2,9 @@
   "dependencies": {
     "@lyrafinance/protocol": "https://github.com/lyra-finance/lyra-protocol.git#9c7ab802421c85c8329826f898d080d5bb60794d",
     "@nomiclabs/hardhat-ethers": "^2.2.3",
+    "@nomiclabs/hardhat-waffle": "^2.0.6",
+    "@typechain/ethers-v6": "^0.4.3",
+    "@typechain/hardhat": "^8.0.3",
     "gmx": "git+https://github.com/0xdomrom/gmx-contracts#master",
     "hardhat": "2.12.3",
     "hardhat-dependency-compiler": "^1.1.2",
@@ -10,6 +13,10 @@
     "prettier-plugin-solidity": "^1.1.3",
     "synthetix": "git+https://github.com/beefmaster/lyra-snaxport-integration#develop",
     "ts-node": "^10.9.1",
+    "typechain": "^8.3.1",
     "typescript": "^5.1.6"
+  },
+  "scripts": {
+    "setup": "yarn && yarn hardhat typechain"
   }
 }

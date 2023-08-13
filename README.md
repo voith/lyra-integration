@@ -5,20 +5,27 @@ This project does a basic with integration with lyra finance contracts and test-
 ### Setup
 ```bash
 git clone https://github.com/voith/lyra-integration.git
-yarn
+yarn setup
 ```
 
 ### Contracts
    #### StraddleStrategy
       This contract deploys a long straddle strategy by opening equal sized long call and long put options
-   - `function getMinCollateral(uint256 strikeId, uint256 size)`
+   - `function quoteBuyStraddle(uint256 strikeId, uint256 size)`
       
-    This function calculates the minimum collateral needed to execute `buyStraddle`
+    returns the cost for executing `buyStraddle`
    
    - `function buyStraddle(uint256 strikeId, uint256 size)`
       
 
-      This is the main entry point for deploying a long straddle strategy for a given `strikeId` and `size`.
+      deploys a long straddle strategy for a given `strikeId` and `size`.
+
+   #### Quoter
+      Calculates the total cost of opening an option with actually opening an option.
+   - `function quoteOpenPosition(OptionMarket.TradeInputParameters memory params)`
+
+
+      returns the toal cost of opening an option with given parameters.
       
 
 ### Scripts
