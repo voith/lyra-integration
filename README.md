@@ -13,7 +13,8 @@ yarn setup
       This contract deploys a long straddle strategy by opening equal sized long call and long put options
    - `function quoteBuyStraddle(uint256 strikeId, uint256 size)`
       
-    returns the cost for executing `buyStraddle`
+      
+      returns the cost for executing `buyStraddle`
    
    - `function buyStraddle(uint256 strikeId, uint256 size)`
       
@@ -25,7 +26,7 @@ yarn setup
    - `function quoteOpenPosition(OptionMarket.TradeInputParameters memory params)`
 
 
-      returns the toal cost of opening an option with given parameters.
+      returns the total cost of opening an option with given parameters.
       
 
 ### Scripts
