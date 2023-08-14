@@ -30,7 +30,7 @@ contract StraddleStrategy {
    *
    * @param strikeId id of strike against which the option will be opened
    * @param size size of the option
-   * @param maxCost the max amount `quoteAsset` tokens that a user is willing to pay
+   * @param maxCost the max amount of `quoteAsset` tokens that a user is willing to pay
    */
   function buyStraddle(uint256 strikeId, uint256 size, uint256 maxCost) external returns (uint256 totalCost) {
     if (!quoteAsset.transferFrom(msg.sender, address(this), maxCost)) {
