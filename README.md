@@ -16,10 +16,10 @@ yarn setup
       
       returns the cost for executing `buyStraddle`
    
-   - `function buyStraddle(uint256 strikeId, uint256 size)`
+   - `function buyStraddle(uint256 strikeId, uint256 size, uint256 maxCost)`
       
 
-      deploys a long straddle strategy for a given `strikeId` and `size`.
+      deploys a long straddle strategy for a given `strikeId` and `size`. `maxCost` is the maximum amount of tokens the user is willing to pay to execute this function.
 
    #### Quoter
       Calculates the total cost of opening an option with actually opening an option.

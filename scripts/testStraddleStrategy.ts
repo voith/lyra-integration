@@ -83,9 +83,9 @@ async function main() {
   const boardIds = await localTestSystem.optionMarket.getLiveBoards();
   const strikeIds = await localTestSystem.optionMarket.getBoardStrikes(boardIds[0]);
   const strikeID = strikeIds[1];
-  const estimatedCost = await straddleStrategy.callStatic.quoteBuyStraddle(strikeID, 100);
+  const estimatedCost = (await straddleStrategy.callStatic.quoteBuyStraddle(strikeID, 100)).mul(2);
   await localTestSystem.snx.quoteAsset.approve(straddleStrategy.address, estimatedCost);
-  await straddleStrategy.buyStraddle(strikeID, 100);
+  await straddleStrategy.buyStraddle(strikeID, 100, estimatedCost);
 
   // checks after executing buyStraddle
   let currentDeployerBalance = await localTestSystem.snx.quoteAsset.balanceOf(deployer.address);

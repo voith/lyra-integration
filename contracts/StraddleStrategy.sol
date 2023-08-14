@@ -30,11 +30,11 @@ contract StraddleStrategy {
    *
    * @param strikeId id of strike against which the option will be opened
    * @param size size of the option
+   * @param maxCost the max amount `quoteAsset` tokens that a user is willing to pay
    */
-  function buyStraddle(uint256 strikeId, uint256 size) external returns (uint256 totalCost) {
-    totalCost = quoteBuyStraddle(strikeId, size);
-    if (!quoteAsset.transferFrom(msg.sender, address(this), totalCost)) {
-      revert ERC20TransferFailed(msg.sender, address(this), totalCost);
+  function buyStraddle(uint256 strikeId, uint256 size, uint256 maxCost) external returns (uint256 totalCost) {
+    if (!quoteAsset.transferFrom(msg.sender, address(this), maxCost)) {
+      revert ERC20TransferFailed(msg.sender, address(this), maxCost);
     }
 
     OptionMarket.TradeInputParameters memory params = OptionMarket.TradeInputParameters({
@@ -53,6 +53,10 @@ contract StraddleStrategy {
     params.optionType = OptionMarket.OptionType.LONG_PUT;
     // Open long put option
     OptionMarket.Result memory putResult = optionMarket.openPosition(params);
+    totalCost = callResult.totalCost + putResult.totalCost;
+    if (maxCost > totalCost && !quoteAsset.transfer(msg.sender, maxCost - totalCost)) {
+        revert ERC20TransferFailed(address(this), msg.sender, maxCost - totalCost);
+    }
   }
 
   /**
